@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 
 // TODO remove after debugging
-import * as SessionApiUtil from './util/session_api_util';
+// import * as SessionApiUtil from './util/session_api_util';
 import { login, logout, signup } from './actions/session_actions';
 
 // TODO remove after debugging
