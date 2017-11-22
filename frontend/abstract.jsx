@@ -5,6 +5,7 @@ import configureStore from './store/store';
 // TODO remove after debugging
 // import * as SessionApiUtil from './util/session_api_util';
 import { login, logout, signup } from './actions/session_actions';
+import merge from 'lodash/merge';
 
 // TODO remove after debugging
 const debugMode = store => {
@@ -16,6 +17,7 @@ const debugMode = store => {
   window.logout = logout;
   window.getState = store.getState;
   window.dispatch = store.dispatch;
+  window.merge = merge;
 };
 
 document.addEventListener("DOMContentLoaded", () => {
