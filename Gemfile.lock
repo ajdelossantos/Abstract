@@ -105,6 +105,8 @@ GEM
     nio4r (2.1.0)
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
+    normalize-scss (7.0.0)
+      sass (~> 3.3)
     pg (0.21.0)
     pry (0.11.2)
       coderay (~> 1.1.0)
@@ -208,6 +210,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (>= 3.0.5, < 3.2)
+  normalize-scss
   pg (~> 0.18)
   pry-rails
   puma (~> 3.7)
@@ -222,4 +225,4 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 BUNDLED WITH
-   1.15.3
+   1.16.0

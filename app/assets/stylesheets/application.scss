@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+//CSS Normalize
+@import "normalize/_normalize.scss";
+@import "normalize/_variables.scss";
+@import "normalize/_vertical-rhythm.scss";
