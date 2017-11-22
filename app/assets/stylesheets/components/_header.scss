@@ -1,0 +1,23 @@
+// @import "../base/fonts.scss"
+
+.logo {
+  font-family: $serif;
+  font-size: 36px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  padding: 5px;
+}
+
+.session-form-label {
+  font-family: $sans-serif;
+  font-weight: 300;
+  color: $medium-gray;
+}
+
+.signin-signup a {
+  font-family: $sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  color: $medium-green;
+}

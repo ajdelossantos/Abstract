@@ -10,10 +10,10 @@ import { Link } from 'react-router-dom';
 
   const userGreeting = (currentUser, logout) => (
     <hgroup className="header-group">
-      <h2 className="header-name">
+      <h3 className="header-name">
         What will you read today, { currentUser.username }?
-      </h2>
-      <h2>{ currentUser.img_url }</h2>
+      </h3>
+      <h3>{ currentUser.img_url }</h3>
       <button className="header-button" onClick={ logout }>Sign Out</button>
     </hgroup>
   );

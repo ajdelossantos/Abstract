@@ -10,13 +10,24 @@ class SessionForm extends React.Component {
       password: ""
     };
 
+    this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(field) {
+    return (event) => (
+      this.setState({ [field]: event.target.value })
+    );
   }
 
   handleSubmit(event) {
     event.preventDefault();
     const user = Object.assign({}, this.state);
     this.props.processForm(user);
+    this.setState({
+      username: "",
+      password: ""
+    });
   }
 
   render() {
@@ -31,6 +42,7 @@ class SessionForm extends React.Component {
               type="text"
               value={ this.state.username }
               className="session-form-input-box"
+              onChange={ this.handleChange('username') }
               />
           </label>
 
@@ -39,6 +51,7 @@ class SessionForm extends React.Component {
               type="password"
               value={ this.state.password }
               className="session-form-input-box"
+              onChange={ this.handleChange('password') }
               />
           </label>
 

@@ -9,7 +9,7 @@ import SessionFormContainer from './session_form/session_form_container';
 const App = () => (
   <div>
     <header className="header">
-      <h2>Abstract</h2>
+      <h2 className="logo">Abstract</h2>
       <GreetingContainer />
     </header>
 
