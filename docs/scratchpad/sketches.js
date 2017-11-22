@@ -3,7 +3,7 @@ $.ajax({
   url: 'api/users',
   data: {
     user: {
-      username: "james04",
+      username: "james01",
       password: "password",
       img_url: "default.png"
     }
@@ -15,7 +15,7 @@ $.ajax({
   url: 'api/session',
   data: {
     user: {
-      username: "james02",
+      username: "james01",
       password: "password"
     }
   }
