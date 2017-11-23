@@ -1,7 +1,9 @@
 import React from 'react';
 import {
-  Route
+  Route,
+  Link
 } from 'react-router-dom';
+import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
 import GreetingContainer from './greeting/greeting_container';
 import SessionFormContainer from './session_form/session_form_container';
@@ -9,12 +11,15 @@ import SessionFormContainer from './session_form/session_form_container';
 const App = () => (
   <div>
     <header className="header">
-      <h2 className="logo">Abstract</h2>
+      <Link to="/" className="header-link">
+        <h1 className="logo">Abstract</h1>
+      </Link>
+
       <GreetingContainer />
     </header>
 
-    <Route path="/signin" component={SessionFormContainer} />
-    <Route path="/signup" component={SessionFormContainer} />
+    <AuthRoute path="/signin" component={SessionFormContainer} />
+    <AuthRoute path="/signup" component={SessionFormContainer} />
   </div>
 );
 
