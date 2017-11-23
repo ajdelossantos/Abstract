@@ -24,6 +24,10 @@ export const signup = user => dispatch => (
   }).fail(error => (dispatch(receiveErrors(error.responseJSON))))
 );
 
+export const clearErrors = errors => dispatch => (
+  dispatch(receiveErrors(errors))
+);
+
 const receiveCurrentUser = user => ({
   type: RECEIVE_CURRENT_USER,
   user

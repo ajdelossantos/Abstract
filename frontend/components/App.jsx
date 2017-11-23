@@ -11,11 +11,20 @@ import SessionFormContainer from './session_form/session_form_container';
 const App = () => (
   <div>
     <header className="header">
-      <Link to="/" className="header-link">
-        <h1 className="logo">Abstract</h1>
-      </Link>
+      <div className="header-container">
 
-      <GreetingContainer />
+        <div className="header-flex-0 header-about">
+          <a>About Abstract</a>
+        </div>
+
+        <div className="header-flex-1">
+          <Link to="/" className="header-link">
+            Abstract
+          </Link>
+        </div>
+
+        <GreetingContainer />
+      </div>
     </header>
 
     <AuthRoute path="/signin" component={SessionFormContainer} />

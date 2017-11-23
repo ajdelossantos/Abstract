@@ -20,6 +20,10 @@ class SessionForm extends React.Component {
     }
   }
 
+  componentWillUnmount() {
+    this.props.clearErrors([]);
+  }
+
   handleChange(field) {
     return (event) => (
       this.setState({ [field]: event.target.value })
@@ -38,9 +42,9 @@ class SessionForm extends React.Component {
 
   navLink() {
     if (this.props.formType === 'signin') {
-      return <Link to="/signup">Sign up.</Link>;
+      return <Link to="/signup" >Sign up.</Link>;
     } else {
-      return <Link to="/signin">Sign in.</Link>;
+      return <Link to="/signin" >Sign in.</Link>;
     }
   }
 
@@ -51,7 +55,7 @@ class SessionForm extends React.Component {
         {
           this.props.errors.map((error, idx) => (
           <li key={`error#${ idx }`}>
-            {error}
+            Oops. {error}
           </li>
         ))
       }
@@ -76,9 +80,7 @@ class SessionForm extends React.Component {
 
     return(
       <div className="session-form-container">
-        <form
-          className="session-form-box"
-          >
+        <form className="session-form-box">
 
           <h2 className="session-form-header">{ headerText }</h2>
           <br />
@@ -87,6 +89,7 @@ class SessionForm extends React.Component {
 
           <div className="session-form">
             <label className="session-form-label">Your username
+              <br />
               <input
                 type="text"
                 value={ this.state.username }
@@ -97,6 +100,7 @@ class SessionForm extends React.Component {
             <br />
 
             <label className="session-form-label">Your password
+              <br />
               <input
                 type="password"
                 value={ this.state.password }

@@ -2,10 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
   const sessionLinks = () => (
-    <nav className="signin-signup">
-      <Link to="/signin">Sign In</Link>
-      <Link to="/signup">Get Started</Link>
-    </nav>
+    <div className="header-flex-2">
+      <nav className="signin-signup">
+        <Link to="/signin" className="signin-signup-1">Sign In</Link>
+        <Link to="/signup" className="signin-signup-2">Get Started</Link>
+      </nav>
+    </div>
   );
 
   const userGreeting = (currentUser, logout) => (
