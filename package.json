@@ -31,14 +31,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "webpack",
-    // start the flow server
     "flow start": "flow start",
-    // stop the flow server
     "flow stop": "flow stop",
-    // check the flow status
     "flow status": "flow status",
-    // check the flow coverage percentage
     "flow coverage": "flow coverage"
   },
   "repository": {
@@ -62,5 +57,9 @@
     "eslint-plugin-react": "^7.5.1",
     "flow-bin": "^0.59.0",
     "prettier-eslint": "^8.2.2"
+  },
+  "babel": {
+    "presets": ["react", "flow"],
+    "retainLines": true
   }
 }
