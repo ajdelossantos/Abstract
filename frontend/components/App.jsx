@@ -14,7 +14,7 @@ const App = () => (
       <div className="header-container">
 
         <div className="header-flex-0 header-about">
-          <a>About Abstract</a>
+          <a href="#">About Abstract</a> 
         </div>
 
         <div className="header-flex-1">

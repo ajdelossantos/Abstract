@@ -11,12 +11,18 @@ import { Link } from 'react-router-dom';
   );
 
   const userGreeting = (currentUser, logout) => (
-    <hgroup className="header-group">
-      <h3 className="header-name">
-        What will you read today, { currentUser.username }?
-      </h3>
-      <h3>{ currentUser.img_url }</h3>
-      <button className="header-button" onClick={ logout }>Sign Out</button>
+    <hgroup className="header-group header-flex-2">
+
+      <div className="header-group-1">
+      <span className="header-name">
+        { currentUser.username }
+      </span>
+      <span>{ currentUser.img_url }</span>
+      </div>
+
+      <div className="header-group-2">
+        <button className="header-button" onClick={ logout }>Sign Out</button>
+      </div>
     </hgroup>
   );
 

@@ -14,9 +14,29 @@
   width: 100%;
   border-bottom: 1px solid $lightest-gray;
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+}
 
+.header-flex-0 {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header-flex-1 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-flex-2 {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .header-about {
@@ -51,4 +71,9 @@
 .signin-signup-2 {
   border: 1px solid $medium-green;
   border-radius: 5px;
+}
+
+.header-group {
+  display: flex;
+  flex-direction: column;
 }

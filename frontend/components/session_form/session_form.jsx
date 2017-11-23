@@ -71,16 +71,16 @@ class SessionForm extends React.Component {
     if (this.props.formType === 'signin') {
       headerText = "Welcome back.";
       aboutText = "Sign in to access your stories, follow authors you love, and like stories that speak to your heart.";
-      navText = "New to Abstract?";
+      navText = "New to Abstract? ";
     } else {
       headerText = "Join Abstract.";
       aboutText = "Create an account to curate your own stories, follow your favorite authors, and like the stories which resonate with you.";
-      navText = "Already have an account?";
+      navText = "Already have an account? ";
     }
 
     return(
       <div className="session-form-container">
-        <form className="session-form-box">
+        <form className="session-form-box absolute-center">
 
           <h2 className="session-form-header">{ headerText }</h2>
           <br />
@@ -110,10 +110,17 @@ class SessionForm extends React.Component {
             </label>
             <br />
 
-            <input type="submit" value="Continue" onClick={ this.handleSubmit } />
+            <input
+              className="session-submit-input"
+              type="submit"
+              value="Continue"
+              onClick={ this.handleSubmit } />
           </div>
           <br />
-          <p>{ navText } { this.navLink() }</p>
+          <span className="session-navlinks">
+            <p>{ navText } </p>
+            { this.navLink() }
+          </span>
         </form>
       </div>
     );
