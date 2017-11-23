@@ -1,34 +1,37 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-  const sessionLinks = () => (
-    <div className="header-flex-2">
-      <nav className="signin-signup">
-        <Link to="/signin" className="signin-signup-1">Sign In</Link>
-        <Link to="/signup" className="signin-signup-2">Get Started</Link>
-      </nav>
-    </div>
-  );
+const sessionLinks = () => (
+  <div className="header-flex-2">
+    <nav className="signin-signup">
+      <Link to="/signin" className="signin-signup-1">
+        Sign In
+      </Link>
+      <Link to="/signup" className="signin-signup-2">
+        Get Started
+      </Link>
+    </nav>
+  </div>
+);
 
-  const userGreeting = (currentUser, logout) => (
-    <hgroup className="header-group header-flex-2">
-
-      <div className="header-group-1">
-      <span className="header-name">
-        { currentUser.username }
+const userGreeting = (currentUser, logout) => (
+  <hgroup className="header-group header-flex-2">
+    <div className="header-group-1">
+      <span className="header-name">{currentUser.username}</span>
+      <span>
+        <i className="fa fa-user-circle-o fa-3x" aria-hidden="true" />
       </span>
-      <span>{ currentUser.img_url }</span>
-      </div>
+    </div>
 
-      <div className="header-group-2">
-        <button className="header-button" onClick={ logout }>Sign Out</button>
-      </div>
-    </hgroup>
-  );
+    <div className="header-group-2">
+      <button className="header-button" onClick={logout}>
+        Sign Out
+      </button>
+    </div>
+  </hgroup>
+);
 
-  const Greeting = ({ currentUser, logout }) => (
-    currentUser ? userGreeting(currentUser, logout) : sessionLinks()
-  );
-
+const Greeting = ({ currentUser, logout }) =>
+  currentUser ? userGreeting(currentUser, logout) : sessionLinks();
 
 export default Greeting;
