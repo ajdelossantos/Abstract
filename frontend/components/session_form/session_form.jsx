@@ -1,8 +1,7 @@
-import React from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import React from "react";
+import { Link, withRouter } from "react-router-dom";
 
 class SessionForm extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -16,7 +15,7 @@ class SessionForm extends React.Component {
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.loggedIn) {
-      this.props.history.push('/');
+      this.props.history.push("/");
     }
   }
 
@@ -25,9 +24,7 @@ class SessionForm extends React.Component {
   }
 
   handleChange(field) {
-    return (event) => (
-      this.setState({ [field]: event.target.value })
-    );
+    return event => this.setState({ [field]: event.target.value });
   }
 
   handleSubmit(event) {
@@ -41,24 +38,19 @@ class SessionForm extends React.Component {
   }
 
   navLink() {
-    if (this.props.formType === 'signin') {
-      return <Link to="/signup" >Sign up.</Link>;
+    if (this.props.formType === "signin") {
+      return <Link to="/signup">Sign up.</Link>;
     } else {
-      return <Link to="/signin" >Sign in.</Link>;
+      return <Link to="/signin">Sign in.</Link>;
     }
   }
 
   renderErrors() {
-
-    return(
+    return (
       <ul>
-        {
-          this.props.errors.map((error, idx) => (
-          <li key={`error#${ idx }`}>
-            Oops. {error}
-          </li>
-        ))
-      }
+        {this.props.errors.map((error, idx) => (
+          <li key={`error#${idx}`}>Oops. {error}</li>
+        ))}
       </ul>
     );
   }
@@ -68,59 +60,68 @@ class SessionForm extends React.Component {
     let aboutText;
     let navText;
 
-    if (this.props.formType === 'signin') {
+    if (this.props.formType === "signin") {
       headerText = "Welcome back.";
-      aboutText = "Sign in to access your stories, follow authors you love, and like stories that speak to your heart.";
+      aboutText =
+        "Sign in to access your stories, follow authors you love, and like stories that speak to your heart.";
       navText = "New to Abstract? ";
     } else {
       headerText = "Join Abstract.";
-      aboutText = "Create an account to curate your own stories, follow your favorite authors, and like the stories which resonate with you.";
+      aboutText =
+        "Create an account to curate your own stories, follow your favorite authors, and like the stories which resonate with you.";
       navText = "Already have an account? ";
     }
 
-    return(
+    return (
       <div className="session-form-container">
         <form className="session-form-box absolute-center">
-
-          <h2 className="session-form-header">{ headerText }</h2>
+          <h2 className="session-form-header">{headerText}</h2>
           <br />
-          <p className="session-form-about">{ aboutText }</p>
-          { this.renderErrors() }
+          <p className="session-form-about">{aboutText}</p>
+          {this.renderErrors()}
 
           <div className="session-form">
-            <label className="session-form-label">Your username
-              <br />
-              <input
-                type="text"
-                value={ this.state.username }
-                className="session-form-input-box"
-                onChange={ this.handleChange('username') }
-                />
+            <label htmlFor="session-username" className="session-form-label">
+              Your username
             </label>
             <br />
-
-            <label className="session-form-label">Your password
-              <br />
-              <input
-                type="password"
-                value={ this.state.password }
-                className="session-form-input-box"
-                onChange={ this.handleChange('password') }
-                />
+            <input
+              type="text"
+              value={this.state.username}
+              id="session-username"
+              className="session-form-input-box"
+              onChange={this.handleChange("username")}
+            />
+            <br />
+            <label htmlFor="session-password" className="session-form-label">
+              Your password
             </label>
             <br />
-
+            <input
+              type="password"
+              value={this.state.password}
+              id="session-password"
+              className="session-form-input-box"
+              onChange={this.handleChange("password")}
+            />
+            <br />
             <input
               className="session-submit-input"
               type="submit"
               value="Continue"
-              onClick={ this.handleSubmit } />
+              onClick={this.handleSubmit}
+            />
           </div>
           <br />
           <span className="session-navlinks">
-            <p>{ navText } </p>
-            { this.navLink() }
+            <p>{navText} </p>
+            {this.navLink()}
           </span>
+          <div className="btn-close">
+            <Link to="/">
+              <i className="fa fa-times" aria-hidden="true" />
+            </Link>
+          </div>
         </form>
       </div>
     );

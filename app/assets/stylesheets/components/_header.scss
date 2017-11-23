@@ -1,10 +1,7 @@
-// @import "../base/fonts.scss"
-
 .header {
   margin: 0 auto;
   font-family: $sans-serif;
   font-size: 14px;
-  // border: 1px solid #000;
   max-width: 1000px;
   padding: 0 20px;
 }
@@ -39,8 +36,16 @@
   align-items: center;
 }
 
+.header a:hover {
+  cursor: pointer;
+}
+
 .header-about {
   color: $medium-gray;
+}
+
+.header-about:hover {
+  color: $medium-dark-gray;
 }
 
 .header-link {
@@ -48,7 +53,6 @@
   font-size: 36px;
   font-weight: 700;
 }
-
 
 .session-form-label {
   font-family: $sans-serif;
@@ -68,6 +72,14 @@
   padding: 10px 20px;
 }
 
+.signin-signup a:hover {
+  color: $dark-green;
+}
+
+.signin-signup-2:hover {
+  border-color: $dark-green;
+}
+
 .signin-signup-2 {
   border: 1px solid $medium-green;
   border-radius: 5px;
@@ -75,5 +87,40 @@
 
 .header-group {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-group-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-group-2-a {
+  flex: 1;
+  display: flex;
+}
+
+.header-group-2-b {
+  flex: 1;
+  display: flex;
+}
+
+.header-username {
+  padding: 5px 25px;
+  font-weight: 300;
+  color: $medium-dark-gray;
+}
+
+.header-button {
+  font-family: $sans-serif;
+  font-weight: 300;
+  color: $medium-green;
+  padding: 10px 20px;
+  border: 1px solid $medium-green;
+  border-radius: 5px;
+  background-color: #fff;
 }

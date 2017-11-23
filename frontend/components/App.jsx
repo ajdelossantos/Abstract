@@ -1,20 +1,16 @@
-import React from 'react';
-import {
-  Route,
-  Link
-} from 'react-router-dom';
-import { AuthRoute, ProtectedRoute } from '../util/route_util';
+import React from "react";
+import { Route, Link } from "react-router-dom";
+import { AuthRoute, ProtectedRoute } from "../util/route_util";
 
-import GreetingContainer from './greeting/greeting_container';
-import SessionFormContainer from './session_form/session_form_container';
+import GreetingContainer from "./greeting/greeting_container";
+import SessionFormContainer from "./session_form/session_form_container";
 
 const App = () => (
   <div>
     <header className="header">
       <div className="header-container">
-
         <div className="header-flex-0 header-about">
-          <a href="#">About Abstract</a> 
+          <a href="#">About Abstract</a>
         </div>
 
         <div className="header-flex-1">
