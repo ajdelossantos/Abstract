@@ -37,10 +37,13 @@ class SessionForm extends React.Component {
   }
 
   navLink() {
-
+    if (this.props.formType === 'signin') {
+      return <Link to="/signup">Sign up.</Link>;
+    } else {
+      return <Link to="/signin">Sign in.</Link>;
+    }
   }
 
-//TODO fix this???
   renderErrors() {
 
     return(
@@ -59,13 +62,16 @@ class SessionForm extends React.Component {
   render() {
     let headerText;
     let aboutText;
+    let navText;
 
     if (this.props.formType === 'signin') {
       headerText = "Welcome back.";
-      aboutText = "Sign in to access your stories, follow authors you love, and like stories that speak to your heart."
+      aboutText = "Sign in to access your stories, follow authors you love, and like stories that speak to your heart.";
+      navText = "New to Abstract?";
     } else {
       headerText = "Join Abstract.";
-      aboutText = "Create an account to curate your own stories, follow your favorite authors, and like the stories which resonate with you."
+      aboutText = "Create an account to curate your own stories, follow your favorite authors, and like the stories which resonate with you.";
+      navText = "Already have an account?";
     }
 
     return(
@@ -102,6 +108,8 @@ class SessionForm extends React.Component {
 
             <input type="submit" value="Continue" onClick={ this.handleSubmit } />
           </div>
+          <br />
+          <p>{ navText } { this.navLink() }</p>
         </form>
       </div>
     );
