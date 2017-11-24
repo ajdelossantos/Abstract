@@ -80,6 +80,18 @@
   color: $dark-green;
 }
 
+.session-submit-group {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  max-height: 50px;
+  height: 100%;
+  width: 100%;
+  max-width: 300px;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
 .session-submit-input {
   border: 1px solid $medium-green;
   border-radius: 5px;
@@ -88,6 +100,7 @@
   color: #fff;
   font-size: 14px;
   font-weight: 300;
+  height: 40px;
 }
 
 .session-submit-input:hover {
@@ -114,4 +127,16 @@
 .btn-close:hover {
   cursor: pointer;
   color: $dark-gray;
+}
+
+.session-list-errors {
+  position: relative;
+  right: 25px;
+  list-style: none;
+  font-weight: 300;
+  color: $medium-dark-gray;
+}
+
+.session-list-errors li {
+  padding: 1px;
 }

@@ -11,6 +11,7 @@ class SessionForm extends React.Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleGuest = this.handleGuest.bind(this);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -37,6 +38,30 @@ class SessionForm extends React.Component {
     });
   }
 
+  handleGuest(event) {
+    event.preventDefault();
+    const demoUser = Object.assign({
+      username: "Demo User",
+      password: "password"
+    });
+    this.props.processForm(demoUser);
+    this.setState({
+      username: "",
+      password: ""
+    });
+  }
+
+  guestSubmit() {
+    return (
+      <input
+        className="session-submit-input session-demo"
+        type="submit"
+        value="Demo Login"
+        onClick={this.handleGuest}
+      />
+    );
+  }
+
   navLink() {
     if (this.props.formType === "signin") {
       return <Link to="/signup">Sign up.</Link>;
@@ -47,9 +72,9 @@ class SessionForm extends React.Component {
 
   renderErrors() {
     return (
-      <ul>
+      <ul className="session-list-errors">
         {this.props.errors.map((error, idx) => (
-          <li key={`error#${idx}`}>Oops. {error}</li>
+          <li key={`error#${idx}`}>Oops! {error}</li>
         ))}
       </ul>
     );
@@ -59,17 +84,20 @@ class SessionForm extends React.Component {
     let headerText;
     let aboutText;
     let navText;
+    let guestBtn;
 
     if (this.props.formType === "signin") {
       headerText = "Welcome back.";
       aboutText =
         "Sign in to access your stories, follow authors you love, and like stories that speak to your heart.";
       navText = "New to Abstract? ";
+      guestBtn = this.guestSubmit();
     } else {
       headerText = "Join Abstract.";
       aboutText =
         "Create an account to curate your own stories, follow your favorite authors, and like the stories which resonate with you.";
       navText = "Already have an account? ";
+      guestBtn = "";
     }
 
     return (
@@ -105,12 +133,15 @@ class SessionForm extends React.Component {
               onChange={this.handleChange("password")}
             />
             <br />
-            <input
-              className="session-submit-input"
-              type="submit"
-              value="Continue"
-              onClick={this.handleSubmit}
-            />
+            <div className="session-submit-group">
+              <input
+                className="session-submit-input"
+                type="submit"
+                value="Continue"
+                onClick={this.handleSubmit}
+              />
+              {guestBtn}
+            </div>
           </div>
           <br />
           <span className="session-navlinks">
