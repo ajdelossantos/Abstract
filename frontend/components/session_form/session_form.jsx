@@ -71,13 +71,9 @@ class SessionForm extends React.Component {
   }
 
   renderErrors() {
-    return (
-      <ul className="session-list-errors">
-        {this.props.errors.map((error, idx) => (
-          <li key={`error#${idx}`}>Oops! {error}</li>
-        ))}
-      </ul>
-    );
+    return this.props.errors.map((error, idx) => (
+      <li key={`error#${idx}`}>Oops! {error}</li>
+    ));
   }
 
   render() {
@@ -102,17 +98,23 @@ class SessionForm extends React.Component {
 
     return (
       <div className="session-form-container">
-        <form className="session-form-box absolute-center">
-          <h2 className="session-form-header">{headerText}</h2>
-          <br />
-          <p className="session-form-about">{aboutText}</p>
-          {this.renderErrors()}
+        <form className="session-form-box">
+          <div className="session-errors-container session-flex-0">
+            <ul className="session-list-errors">{this.renderErrors()}</ul>
+          </div>
+          <div className="session-form session-flex-1">
+            <h2 className="session-form-header">{headerText}</h2>
+          </div>
 
-          <div className="session-form">
+          <div className="session-form session-flex-2">
+            <p className="session-form-about">{aboutText}</p>
+          </div>
+
+          <div className="session-form session-flex-3">
             <label htmlFor="session-username" className="session-form-label">
               Your username
             </label>
-            <br />
+
             <input
               type="text"
               value={this.state.username}
@@ -120,11 +122,11 @@ class SessionForm extends React.Component {
               className="session-form-input-box"
               onChange={this.handleChange("username")}
             />
-            <br />
+
             <label htmlFor="session-password" className="session-form-label">
               Your password
             </label>
-            <br />
+
             <input
               type="password"
               value={this.state.password}
@@ -132,7 +134,7 @@ class SessionForm extends React.Component {
               className="session-form-input-box"
               onChange={this.handleChange("password")}
             />
-            <br />
+
             <div className="session-submit-group">
               <input
                 className="session-submit-input"
@@ -143,11 +145,14 @@ class SessionForm extends React.Component {
               {guestBtn}
             </div>
           </div>
-          <br />
-          <span className="session-navlinks">
-            <p>{navText} </p>
-            {this.navLink()}
-          </span>
+
+          <div className="session-flex-4">
+            <span className="session-navlinks">
+              <p>{navText} </p>
+              {this.navLink()}
+            </span>
+          </div>
+
           <div className="btn-close">
             <Link to="/">
               <i className="fa fa-times" aria-hidden="true" />
