@@ -11,7 +11,7 @@ const storiesReducer = (state = {}, action) => {
 
   switch (action.type) {
     case RECEIVE_ALL_STORIES:
-      return merge(action.stories);
+      return action.stories;
 
     case RECEIVE_STORY:
       newState = merge({}, state);
