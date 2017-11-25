@@ -1,4 +1,4 @@
-import * as StoryApiUtil from "../util/story_api-util";
+import * as StoryApiUtil from "../util/stories_api_util";
 
 export const RECEIVE_ALL_STORIES = "RECEIVE_ALL_STORIES";
 export const RECEIVE_STORY = "RECEIVE_STORY";

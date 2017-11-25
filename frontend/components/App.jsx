@@ -1,9 +1,10 @@
 import React from "react";
-import { Route, Link } from "react-router-dom";
+import { Route, Link, Switch } from "react-router-dom";
 import { AuthRoute, ProtectedRoute } from "../util/route_util";
 
 import GreetingContainer from "./greeting/greeting_container";
 import SessionFormContainer from "./session_form/session_form_container";
+import StoryIndexContainer from "./stories/story_index_container";
 
 const App = () => (
   <div>
@@ -25,6 +26,7 @@ const App = () => (
 
     <AuthRoute path="/signin" component={SessionFormContainer} />
     <AuthRoute path="/signup" component={SessionFormContainer} />
+    <Route exact path="/" component={StoryIndexContainer} />
   </div>
 );
 
