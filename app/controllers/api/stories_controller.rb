@@ -15,6 +15,7 @@ class Api::StoriesController < ApplicationController
 
     if @story.update(story_params)
       @story.img_url = "story_default.png" if @story.img_url == ""
+      render :show
     else
       render json: @story.errors.full_messages, status: 422
     end
@@ -32,7 +33,7 @@ class Api::StoriesController < ApplicationController
     @story = Story.find(params[:id])
 
     if @story.destroy
-      render :show
+      render :index
     else
       render json: @story.errors.full_messages, status: 422
     end
