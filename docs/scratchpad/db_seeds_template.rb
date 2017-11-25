@@ -1,0 +1,10 @@
+Story.create({
+  title:
+    "",
+  body:
+    "",
+  img_url:
+    "story_default.png",
+  author_id:
+    userNUM.id
+})

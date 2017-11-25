@@ -19,4 +19,8 @@ class Story < ApplicationRecord
     foreign_key: :author_id,
     primary_key: :id
 
+  def body_peek
+    self.body.truncate_words(20)
+  end
+
 end
