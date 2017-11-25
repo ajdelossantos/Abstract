@@ -4,7 +4,7 @@ export const RECEIVE_ALL_STORIES = "RECEIVE_ALL_STORIES";
 export const RECEIVE_STORY = "RECEIVE_STORY";
 export const REMOVE_STORY = "REMOVE_STORY";
 
-//TODO implement errors!
+//TODO implement clearErrors!
 
 export const fetchStories = () => dispatch =>
   StoryApiUtil.fetchStories().then(stories =>
@@ -32,7 +32,7 @@ const receiveAllStories = stories => ({
   stories
 });
 
-const receiveStory = stories => ({
+const receiveStory = story => ({
   type: RECEIVE_STORY,
   story
 });

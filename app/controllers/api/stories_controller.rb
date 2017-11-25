@@ -33,7 +33,7 @@ class Api::StoriesController < ApplicationController
     @story = Story.find(params[:id])
 
     if @story.destroy
-      render :index
+      render :show
     else
       render json: @story.errors.full_messages, status: 422
     end
@@ -42,6 +42,7 @@ class Api::StoriesController < ApplicationController
   private
 
   def story_params
-    params.require(:story).permit(:title, :body, :img_url)
+    # TODO Remove :author_id after testing...
+    params.require(:story).permit(:title, :body, :img_url, :author_id)
   end
 end
