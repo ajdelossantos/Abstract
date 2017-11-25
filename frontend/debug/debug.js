@@ -9,6 +9,7 @@ import {
   updateStory,
   deleteStory
 } from "../actions/stories_actions";
+import { fetchUsers, fetchUser } from "../actions/users_actions";
 import merge from "lodash/merge";
 
 const debugMode = store => {
@@ -24,6 +25,9 @@ const debugMode = store => {
   window.createStory = createStory;
   window.updateStory = updateStory;
   window.deleteStory = deleteStory;
+
+  window.fetchUsers = fetchUsers;
+  window.fetchUser = fetchUser;
 
   window.getState = store.getState;
   window.dispatch = store.dispatch;
