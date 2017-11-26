@@ -1,13 +1,19 @@
 import React from "react";
-// import StoryIndexItem from "./story_index_item";
+import StoryIndexItem from "./story_index_item";
 
 class StoryIndex extends React.Component {
   constructor(props) {
     super(props);
+    this.assignAuthor = this.assignAuthor.bind(this);
   }
 
   componentDidMount() {
-    this.props.fetchStories();
+    this.props.fetchUsers().then(this.props.fetchStories());
+  }
+
+  assignAuthor(story) {
+    const author = this.props.users.find(user => user.id === story.author_id);
+    return author;
   }
 
   render() {
@@ -15,13 +21,11 @@ class StoryIndex extends React.Component {
       <div>
         <ul>
           {this.props.stories.map(story => (
-            <div>
-              <li>{story.title}</li>
-              <li>{story.body_peek}</li>
-              <li>{story.img_url}</li>
-              <li>{story.author_id}</li>
-              <li>{story.updated_at}</li>
-            </div>
+            <StoryIndexItem
+              key={story.id}
+              story={story}
+              author={this.assignAuthor(story)}
+            />
           ))}
         </ul>
       </div>

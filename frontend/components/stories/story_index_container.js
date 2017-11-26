@@ -8,16 +8,21 @@ import {
   updateStory,
   deleteStory
 } from "../../actions/stories_actions";
+import { fetchUsers, fetchUser } from "../../actions/users_actions";
+import { getAllUsers } from "../../reducers/selectors";
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    stories: Object.values(state.entities.stories)
+    stories: Object.values(state.entities.stories),
+    // users: Object.values(state.entities.users)
+    users: getAllUsers(state.entities)
   };
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    fetchStories: () => dispatch(fetchStories())
+    fetchStories: () => dispatch(fetchStories()),
+    fetchUsers: () => dispatch(fetchUsers())
   };
 };
 

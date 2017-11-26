@@ -11,6 +11,7 @@ import {
 } from "../actions/stories_actions";
 import { fetchUsers, fetchUser } from "../actions/users_actions";
 import merge from "lodash/merge";
+import * as Selectors from "../reducers/selectors";
 
 const debugMode = store => {
   window.signupApi = SessionApiUtil.signup;
@@ -28,6 +29,8 @@ const debugMode = store => {
 
   window.fetchUsers = fetchUsers;
   window.fetchUser = fetchUser;
+
+  window.getAllUsers = Selectors.getAllUsers;
 
   window.getState = store.getState;
   window.dispatch = store.dispatch;
