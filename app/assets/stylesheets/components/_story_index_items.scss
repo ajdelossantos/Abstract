@@ -1,0 +1,91 @@
+.sii-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: $sans-serif;
+  font-size: 14px;
+}
+
+.story-index-item-container-1 {
+  border: 1px solid $light-gray;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 500px;
+  height: 250px;
+  margin-bottom: 20px;
+}
+
+.story-index-item-flex-1 {
+  border-right: 1px dashed #eee;
+  flex: 2;
+  display: flex;
+}
+
+.story-index-item-flex-2 {
+  // border: 1px dashed red;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.placeholder-txt {
+  color: #ddd;
+  padding: 10px;
+}
+
+.story-index-item-header-1 {
+  // border: 1px dashed blue;
+  flex: 1;
+  overflow: hidden;
+}
+
+.story-index-item-article-1 {
+  // border: 1px dashed blue;
+  flex: 2;
+  display: flex;
+  color: $medium-gray;
+  font-style: italic;
+}
+
+.story-index-item-footer-1 {
+  // border: 1px dashed blue;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.story-index-item-user-img {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.story-index-item-user-details {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.story-index-item-user-link {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  padding: 5px;
+}
+
+.story-index-item-user-date {
+  flex: 1;
+  display: flex;
+  color: $medium-gray;
+  align-items: flex-start;
+  padding: 5px;
+}

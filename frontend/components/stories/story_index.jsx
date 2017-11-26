@@ -19,7 +19,13 @@ class StoryIndex extends React.Component {
   render() {
     return (
       <div>
-        <ul>
+        <header className="story-index-header-container">
+          <div className="story-index-header-flex-1">
+            <h2 className="title">Recent Stories</h2>
+          </div>
+          <div className="story-index-header-flex-2">&nbsp;</div>
+        </header>
+        <ul className="story-index-list">
           {this.props.stories.map(story => (
             <StoryIndexItem
               key={story.id}
