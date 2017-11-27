@@ -1,0 +1,34 @@
+.article-text {
+  font-family: $article;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 1.58;
+  letter-spacing: -0.003em;
+}
+
+.article-text-container,
+.article-title {
+  max-width: 700px;
+  width: 100%;
+}
+
+.article-flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-flex-child {
+  display: flex;
+}
+
+.article-img {
+  border: 1px dashed $lightest-gray;
+  background-color: $medium-gray;
+  box-sizing: border-box;
+  max-height: 400px;
+  max-width: 1150px;
+  height: 400px;
+  width: 100%;
+}

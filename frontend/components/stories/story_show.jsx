@@ -19,11 +19,20 @@ class StoryShow extends React.Component {
       let { title, body, img_url, author_id, updated_at } = this.props.story;
 
       return (
-        <div>
-          <FollowsContainer user={this.props.author} updated_at={updated_at} />
-          <h2>{title}</h2>
-          <br />
-          <p>{body}</p>
+        <div className="article-flex-container">
+          <div className="article-flex-child follows-container">
+            <FollowsContainer
+              user={this.props.author}
+              updated_at={updated_at}
+            />
+          </div>
+          <div className="article-title article-flex-child">
+            <h2 className="title">{title}</h2>
+          </div>
+          <div className="article-img article-flex-child">{img_url}</div>
+          <div className="article-text-container article-flex-child">
+            <p className="article-text">{body}</p>
+          </div>
         </div>
       );
     }
