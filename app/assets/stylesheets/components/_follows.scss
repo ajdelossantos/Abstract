@@ -1,29 +1,47 @@
 .follow-btn-container {
   display: flex;
   flex: 1;
+  margin-left: 5px;
 }
 
 .follow-btn {
   border: 1px solid $medium-green;
   border-radius: 5px;
-  padding: 10px 20px;
-  background-color: $medium-green;
-  color: #fff;
-  font-size: 14px;
+  margin-right: 5px;
+  padding: 2px 10px;
+  color: $medium-green;
+  font-size: 12px;
   font-weight: 300;
 }
 
 .follow-btn:hover {
-  background-color: $dark-green;
+  color: #fff;
+  border-color: $medium-green;
+  background-color: $medium-green;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .follows-container {
-  border: 1px dashed red;
   box-sizing: border-box;
   max-width: 740px;
   width: 100%;
   height: 125px;
   padding-top: 40px;
   padding: 10px;
+}
+
+#icon-help {
+  height: 100%;
+  max-width: 75px;
+}
+
+.follows-flex-1 {
+  display: flex;
+  flex: 1;
+}
+
+.follows-flex-2 {
+  display: flex;
+  flex: 4;
 }

@@ -1,3 +1,9 @@
+.user-show-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .user-story-index-list {
   columns: 1;
 }
@@ -6,4 +12,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.user-flex-2 {
+  display: flex;
+  max-width: 1000;
+  width: 100%;
 }

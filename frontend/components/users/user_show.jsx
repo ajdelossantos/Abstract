@@ -19,17 +19,17 @@ class UserShow extends React.Component {
       let { username } = this.props.user;
 
       return (
-        <div>
-          <div>
+        <div className="user-show-container">
+          <div className="follows-container user-header user-flex-1">
             <FollowsContainer user={this.props.user} updated_at="" />
           </div>
-          <div className="story-index-header-container">
+          <div className="story-index-header-container user-flex-2">
             <div className="story-index-header-flex-1">
               <h2 className="title">{username}'s Feed</h2>
             </div>
             <div className="story-index-header-flex-2">&nbsp;</div>
           </div>
-          <div className="user-stories-container">
+          <div className="user-stories-container user-flex-3">
             <ul className="user-story-index-list">
               {this.props.stories.map(story => (
                 <StoryIndexItem
