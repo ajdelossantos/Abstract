@@ -12,7 +12,6 @@ const mapStateToProps = (state, ownProps) => {
     story => story.author_id === userId
   );
 
-  debugger;
   return { user, stories };
 };
 
