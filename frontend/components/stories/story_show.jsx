@@ -8,23 +8,19 @@ class StoryShow extends React.Component {
 
   componentDidMount() {
     let storyId = this.props.match.params.storyId;
-    let authorId = this.props.author.id;
-    this.props.fetchStory(storyId).then(this.props.fetchUser(authorId));
+    this.props.fetchStory(storyId);
   }
 
   render() {
-    if (!this.props.story || !this.props.author) {
+    if (!this.props.story || !this.props.users) {
       return null;
     } else {
       let { title, body, img_url, author_id, updated_at } = this.props.story;
-
+      console.log(this.props);
       return (
         <div className="article-flex-container">
           <div className="article-flex-child follows-container">
-            <FollowsContainer
-              user={this.props.author}
-              updated_at={updated_at}
-            />
+            <FollowsContainer user={this.props.users} updated_at={updated_at} />
           </div>
           <div className="article-title article-flex-child">
             <h2 className="title">{title}</h2>

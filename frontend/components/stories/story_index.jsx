@@ -8,7 +8,8 @@ class StoryIndex extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchUsers().then(this.props.fetchStories());
+    // this.props.fetchUsers().then(this.props.fetchStories());
+    this.props.fetchStories();
   }
 
   assignAuthor(story) {

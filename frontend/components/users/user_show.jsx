@@ -8,7 +8,7 @@ class UserShow extends React.Component {
   }
 
   componentDidMount() {
-    const userId = this.props.user.id;
+    const userId = parseInt(this.props.match.params.userId);
     this.props.fetchUser(userId).then(this.props.fetchStories());
   }
 

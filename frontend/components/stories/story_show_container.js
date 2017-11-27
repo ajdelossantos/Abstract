@@ -6,15 +6,10 @@ import { fetchUser } from "../../actions/users_actions";
 import { getAllUsers, getAllStories } from "../../reducers/selectors";
 
 const mapStateToProps = (state, ownProps) => {
-  const storyId = parseInt(ownProps.match.params.storyId);
-  const stories = Object.values(state.entities.stories);
-  const story = stories.find(story => story.id === storyId);
-
-  const authorId = story.author_id;
-  const authors = Object.values(state.entities.users);
-  const author = authors.find(author => author.id === authorId);
-
-  return { story, author };
+  return {
+    story: state.entities.stories[parseInt(ownProps.match.params.storyId)],
+    users: state.entities.users
+  };
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {

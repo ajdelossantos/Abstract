@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
 import UserShow from "./user_show";
-import { fetchStories } from "../../actions/stories_actions";
+import { fetchStories, deleteStory } from "../../actions/stories_actions";
 import { fetchUser } from "../../actions/users_actions";
 
 const mapStateToProps = (state, ownProps) => {
@@ -18,6 +18,7 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     fetchStories: () => dispatch(fetchStories()),
+    deleteStory: storyId => dispatch(deleteStory(storyId)),
     fetchUser: userId => dispatch(fetchUser(userId))
   };
 };
