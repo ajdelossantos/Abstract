@@ -39,14 +39,16 @@ class StoryIndexItem extends React.Component {
 
             <div className="story-index-item-footer-1">
               <div className="story-index-item-user-img">
-                <Link to={`/users/${id}`}>
+                <Link to={`/users/${author_id}`}>
                   <i className="fa fa-user-circle-o fa-4x" aria-hidden="true" />
                 </Link>
               </div>
 
               <div className="story-index-item-user-details">
                 <div className="story-index-item-user-link">
-                  <Link to={`/users/${id}`}>{this.props.author.username}</Link>
+                  <Link to={`/users/${author_id}`}>
+                    {this.props.author.username}
+                  </Link>
                 </div>
                 <div className="story-index-item-user-date">
                   <span>{updated_at}</span>

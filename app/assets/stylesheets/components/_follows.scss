@@ -1,0 +1,19 @@
+.follow-btn-container {
+  display: flex;
+  flex: 1;
+}
+
+.follow-btn {
+  border: 1px solid $medium-green;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: $medium-green;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.follow-btn:hover {
+  background-color: $dark-green;
+  cursor: pointer;
+}

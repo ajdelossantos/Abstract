@@ -31,6 +31,7 @@ const debugMode = store => {
   window.fetchUser = fetchUser;
 
   window.getAllUsers = Selectors.getAllUsers;
+  window.getAllStories = Selectors.getAllStories;
 
   window.getState = store.getState;
   window.dispatch = store.dispatch;

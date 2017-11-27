@@ -5,6 +5,10 @@ import { AuthRoute, ProtectedRoute } from "../util/route_util";
 import GreetingContainer from "./greeting/greeting_container";
 import SessionFormContainer from "./session_form/session_form_container";
 import StoryIndexContainer from "./stories/story_index_container";
+import StoryShowContainer from "./stories/story_show_container";
+
+// import LikesContainer from "./stories/likes_container";
+// <Route exact path="/stories/:storyId" component={LikesContainer} />
 
 const App = () => (
   <div>
@@ -27,6 +31,7 @@ const App = () => (
     <AuthRoute path="/signin" component={SessionFormContainer} />
     <AuthRoute path="/signup" component={SessionFormContainer} />
     <Route exact path="/" component={StoryIndexContainer} />
+    <Route exact path="/stories/:storyId" component={StoryShowContainer} />
   </div>
 );
 

@@ -109,6 +109,11 @@
   display: flex;
 }
 
+.header-group-2-b:hover {
+  color: $dark-green;
+  cursor: pointer;
+}
+
 .header-username {
   padding: 5px 25px;
   font-weight: 300;

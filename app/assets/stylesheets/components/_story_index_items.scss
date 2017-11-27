@@ -68,6 +68,10 @@ body {
   justify-content: center;
 }
 
+.story-index-item-user-img:hover {
+  color: $dark-green;
+}
+
 .story-index-item-user-details {
   flex: 3;
   display: flex;
@@ -80,6 +84,10 @@ body {
   display: flex;
   align-items: flex-end;
   padding: 5px;
+}
+
+.story-index-item-user-link:hover {
+  text-decoration: underline;
 }
 
 .story-index-item-user-date {
