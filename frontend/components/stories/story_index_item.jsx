@@ -16,6 +16,7 @@ class StoryIndexItem extends React.Component {
       author_id,
       updated_at
     } = this.props.story;
+
     if (!this.props.author) {
       return null;
     } else {
@@ -34,6 +35,8 @@ class StoryIndexItem extends React.Component {
                   <Link to={`/stories/${id}`}>{title}</Link>
                 </h2>
               </div>
+
+              <div className="sii-spacer">&nbsp;</div>
 
               <div className="story-index-item-article-1">
                 <article>{body_peek}</article>
@@ -58,11 +61,14 @@ class StoryIndexItem extends React.Component {
                   <div className="story-index-item-user-date">
                     <span>{updated_at}</span>
                   </div>
-                  <StoryControlGroup
-                    storyId={id}
-                    deleteStory={this.props.deleteStory}
-                  />
                 </div>
+                <StoryControlGroup
+                  storyId={id}
+                  deleteStory={this.props.deleteStory}
+                  displayControl={this.props.displayControl}
+                  currentUser={this.props.currentUser}
+                  authorId={author_id}
+                />
               </div>
             </div>
           </div>

@@ -32,6 +32,8 @@ class StoryIndex extends React.Component {
               story={story}
               author={this.assignAuthor(story)}
               deleteStory={() => {}}
+              displayControl={false}
+              currentUser={this.props.currentUser}
             />
           ))}
         </ul>

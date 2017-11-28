@@ -21,10 +21,13 @@ li {
 .main-header-flex-1 {
   flex: 3;
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   border-bottom: 1px solid $lightest-gray;
 }
 
-.main-header-flex-2 {
+.main-header-flex-1 .main-header-flex-2 {
   flex: 1;
   display: flex;
 }
@@ -34,4 +37,22 @@ li {
   border: none;
   padding: 0;
   border-radius: 0px;
+}
+
+.input-btn-1 {
+  box-sizing: border-box;
+  font-family: $sans-serif;
+  font-weight: 300;
+  color: $medium-green;
+  padding: 10px 20px;
+  border: 1px solid $medium-green;
+  border-radius: 5px;
+  background-color: #fff;
+  height: 40px;
+}
+
+.input-btn-1:hover {
+  cursor: pointer;
+  color: $dark-green;
+  border-color: $dark-green;
 }

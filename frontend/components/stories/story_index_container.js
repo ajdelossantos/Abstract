@@ -15,7 +15,8 @@ const mapStateToProps = (state, ownProps) => {
   return {
     stories: Object.values(state.entities.stories),
     // users: Object.values(state.entities.users)
-    users: getAllUsers(state.entities)
+    users: getAllUsers(state.entities),
+    currentUser: state.session.currentUser
   };
 };
 

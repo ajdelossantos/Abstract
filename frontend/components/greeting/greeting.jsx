@@ -17,7 +17,7 @@ const sessionLinks = () => (
 const userGreeting = (currentUser, logout) => (
   <hgroup className="header-group header-flex-2">
     <div className="header-group-1">
-      <button className="header-button" onClick={logout}>
+      <button className="input-btn-1" onClick={logout}>
         Sign Out
       </button>
     </div>

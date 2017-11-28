@@ -12,7 +12,9 @@ const mapStateToProps = (state, ownProps) => {
     story => story.author_id === userId
   );
 
-  return { user, stories };
+  let currentUser = state.session.currentUser;
+
+  return { user, stories, currentUser };
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {
