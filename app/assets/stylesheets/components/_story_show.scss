@@ -25,11 +25,16 @@
 }
 
 .article-img {
-  border: 1px dashed $lightest-gray;
-  background-color: $medium-gray;
-  box-sizing: border-box;
   max-height: 400px;
   max-width: 1150px;
   height: 400px;
   width: 100%;
+  padding-bottom: 40px;
+  margin-bottom: 10px;
+}
+
+.article-img img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
 }
