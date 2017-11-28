@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 40px;
 }
 
 .story-form-content {
@@ -16,6 +17,7 @@
 .sfb-flex-1,
 .sfb-flex-2,
 .sfb-flex-3 {
+  position: relative;
   display: flex;
   flex: 1;
 }
@@ -45,16 +47,83 @@
   max-width: 700px;
 }
 
+.sfb-flex-1 {
+  padding-bottom: 20px;
+}
+
 .sf-title,
 .sf-body {
   min-height: 40px;
+  overflow: auto;
+  padding: 0 10px;
+}
+
+.sf-title,
+.sf-body,
+.sf-img-url {
   border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  resize: none;
+  overflow: hidden;
+}
+
+.sf-img-url {
+  font: 400 14px $sans-serif;
+  min-width: 350px;
+  height: 36px;
+  border-bottom: 2px solid $medium-gray;
+}
+
+.sf-submit-btn {
+  margin-left: 50px;
+}
+
+.sf-label {
+  font: 400 14px $sans-serif;
+  color: $medium-dark-gray;
+  position: absolute;
+  top: 22px;
+  left: -35px;
+  opacity: 0;
 }
 
 .sf-title {
-  font: 700 24px $sans-serif;
+  font: 700 36px $sans-serif;
+}
+
+.sf-title:focus {
+  border-left: 2px solid $medium-gray;
+}
+
+.sf-title:focus + .sf-label {
+  opacity: 1;
+}
+
+.url-label {
+  position: absolute;
+  right: 540px;
+  font: 400 12px $sans-serif;
+  color: $medium-dark-gray;
+  border-right: 2px solid $medium-gray;
+  padding-right: 5px;
+  opacity: 0;
 }
 
 .sf-body {
-  font: 400 16px $serif;
+  font: 400 20px $serif;
+  margin-top: 40px;
+}
+
+.sfb-flex-1 {
+  position: relative;
+  left: 200px;
+  border: 1px dashed red;
+  padding-bottom: 50px;
+}
+
+.sf-img-url:focus + .url-label {
+  opacity: 1;
 }

@@ -53,6 +53,25 @@ class StoryForm extends React.Component {
           <div className="story-form-box sf-flex-2">
             <form className="story-form-content">
               <div className="sfb-flex-1">
+                <input
+                  id="sf-img-url"
+                  type="text"
+                  className="sf-img-url"
+                  onChange={this.update("img_url")}
+                  value={this.state.img_url}
+                  placeholder="Image url"
+                />
+                <label htmlFor="sf-img-url" className="url-label">
+                  Image url
+                </label>
+                <input
+                  type="submit"
+                  value={btnText}
+                  onClick={this.handleSubmit}
+                  className="btn-reset input-btn-1 sf-submit-btn"
+                />
+              </div>
+              <div className="sfb-flex-2">
                 <TextareaAutosize
                   id="sf-title"
                   className="sf-title"
@@ -60,27 +79,17 @@ class StoryForm extends React.Component {
                   value={this.state.title}
                   placeholder="Title"
                 />
+                <label htmlFor="sf-title" className="sf-label">
+                  Title
+                </label>
               </div>
-              <div className="sfb-flex-2">
+              <div className="sfb-flex-3">
+                <label htmlFor="sf-title">&nbsp;</label>
                 <TextareaAutosize
                   className="sf-body"
                   onChange={this.update("body")}
                   value={this.state.body}
                   placeholder="Tell your story..."
-                />
-              </div>
-              <div className="sfb-flex-3">
-                <label htmlFor="sf-img-url">Image URL</label>
-                <input
-                  id="sf-img-url"
-                  className="sf-img-url"
-                  onChange={this.update("img_url")}
-                  value={this.state.img_url}
-                />
-                <input
-                  type="submit"
-                  value={btnText}
-                  onClick={this.handleSubmit}
                 />
               </div>
             </form>
