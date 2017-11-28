@@ -1,11 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export const StoryControlGroup = ({ key, deletePost }) => {
+export const StoryControlGroup = ({ storyId, deleteStory }) => {
   return (
-    <li className="story-control-group">
-      <Link to="/stories/new">Edit Story</Link>
-      <button onClick={() => deletePost(key)}>Delete Story</button>
-    </li>
+    <div className="story-control-group">
+      <div className="sc-flex-child">
+        <Link to={`/stories/${storyId}/edit`} className="sc-link">
+          Edit Story
+        </Link>
+      </div>
+      <div className="sc-flex-child">
+        <button
+          onClick={() => deleteStory(storyId)}
+          className="btn-reset sc-link sc-link-delete"
+        >
+          Delete Story
+        </button>
+      </div>
+    </div>
   );
 };

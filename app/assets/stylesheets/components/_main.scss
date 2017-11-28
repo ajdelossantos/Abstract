@@ -6,3 +6,32 @@ li {
 .title {
   font-size: 36px;
 }
+
+.main-header-container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 200px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.main-header-flex-1 {
+  flex: 3;
+  display: flex;
+  border-bottom: 1px solid $lightest-gray;
+}
+
+.main-header-flex-2 {
+  flex: 1;
+  display: flex;
+}
+
+.btn-reset {
+  font-family: "Open Sans";
+  border: none;
+  padding: 0;
+  border-radius: 0px;
+}

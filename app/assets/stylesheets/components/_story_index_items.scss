@@ -97,3 +97,42 @@ body {
   align-items: flex-start;
   padding: 5px;
 }
+
+.story-control-group {
+  position: relative;
+  left: 225px;
+  bottom: 29px;
+  font-family: "Open Sans", sans-serif;
+  border: 1px solid $light-gray;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 125px;
+  height: 100%;
+  min-height: 75px;
+}
+
+.sc-flex-child {
+  display: flex;
+  flex: 1;
+}
+
+.sc-link {
+  display: flex;
+  // border: 1px dashed blue;
+  align-items: center;
+  padding: 0px 15px;
+  width: 100%;
+}
+
+.sc-link:hover {
+  cursor: pointer;
+  background-color: $light-gray;
+}
+
+.sc-link-delete:hover {
+  border: 1px solid $red;
+  background-color: $red;
+  color: #eee;
+}

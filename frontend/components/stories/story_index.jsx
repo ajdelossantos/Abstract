@@ -8,7 +8,6 @@ class StoryIndex extends React.Component {
   }
 
   componentDidMount() {
-    // this.props.fetchUsers().then(this.props.fetchStories());
     this.props.fetchStories();
   }
 
@@ -20,11 +19,11 @@ class StoryIndex extends React.Component {
   render() {
     return (
       <div>
-        <header className="story-index-header-container">
-          <div className="story-index-header-flex-1">
+        <header className="main-header-container">
+          <div className="main-header-flex-1">
             <h2 className="title">Recent Stories</h2>
           </div>
-          <div className="story-index-header-flex-2">&nbsp;</div>
+          <div className="main-header-flex-2">&nbsp;</div>
         </header>
         <ul className="story-index-list">
           {this.props.stories.map(story => (
@@ -32,6 +31,7 @@ class StoryIndex extends React.Component {
               key={`story-index-${story.id}`}
               story={story}
               author={this.assignAuthor(story)}
+              deleteStory={() => {}}
             />
           ))}
         </ul>
