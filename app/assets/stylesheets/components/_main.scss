@@ -3,6 +3,10 @@ li {
   list-style-type: none;
 }
 
+ul {
+  -webkit-padding-start: 0;
+}
+
 body {
   color: $black;
 }

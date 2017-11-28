@@ -28,7 +28,6 @@ body {
 }
 
 .story-index-item-flex-2 {
-  // border: 1px dashed red;
   flex: 3;
   display: flex;
   flex-direction: column;
@@ -41,13 +40,11 @@ body {
 }
 
 .story-index-item-header-1 {
-  // border: 1px dashed blue;
   flex: 1;
   overflow: hidden;
 }
 
 .story-index-item-article-1 {
-  // border: 1px dashed blue;
   flex: 2;
   display: flex;
   color: $medium-gray;
@@ -55,7 +52,6 @@ body {
 }
 
 .story-index-item-footer-1 {
-  // border: 1px dashed blue;
   flex: 1;
   display: flex;
   flex-direction: row;
@@ -126,7 +122,6 @@ body {
 
 .sc-link {
   display: flex;
-  // border: 1px dashed blue;
   align-items: center;
   padding: 0px 15px;
   width: 100%;

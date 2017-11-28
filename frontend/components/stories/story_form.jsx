@@ -70,7 +70,12 @@ class StoryForm extends React.Component {
               <div className="sf-spacer">&nbsp;</div>
             </div>
           </div>
-          <div className="sf-header-flex-2-err">[ERRORS]</div>
+          <div className="sf-header-flex-2-err">
+            <ul className="sf-err-list">
+              <li>Oops. You haven't implemented errors yet.</li>
+              <li>Still, this is hella pretty though.</li>
+            </ul>
+          </div>
 
           <div className="story-form-box sf-flex-2">
             <form className="story-form-content">
