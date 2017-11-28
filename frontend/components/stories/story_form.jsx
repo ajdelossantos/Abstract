@@ -1,4 +1,5 @@
 import React from "react";
+import TextareaAutosize from "react-textarea-autosize";
 
 class StoryForm extends React.Component {
   constructor(props) {
@@ -41,14 +42,18 @@ class StoryForm extends React.Component {
       return (
         <div className="story-form-main sf-flex-parent">
           <div className="story-form-header sf-flex-1">
-            <h2>StoryForm Header Text</h2>
+            <div className="sf-header-flex-1">
+              <h2>StoryForm Header Text</h2>
+            </div>
+            <div className="sf-header-flex-2">
+              <div className="sf-spacer">&nbsp;</div>
+            </div>
           </div>
 
           <div className="story-form-box sf-flex-2">
             <form className="story-form-content">
               <div className="sfb-flex-1">
-                <label htmlFor="sf-title">Title</label>
-                <input
+                <TextareaAutosize
                   id="sf-title"
                   className="sf-title"
                   onChange={this.update("title")}
@@ -57,9 +62,7 @@ class StoryForm extends React.Component {
                 />
               </div>
               <div className="sfb-flex-2">
-                <label htmlFor="sf-body">Body</label>
-                <textarea
-                  id="sf-body"
+                <TextareaAutosize
                   className="sf-body"
                   onChange={this.update("body")}
                   value={this.state.body}

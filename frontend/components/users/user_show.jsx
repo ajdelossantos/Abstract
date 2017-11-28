@@ -19,6 +19,7 @@ class UserShow extends React.Component {
       return null;
     } else {
       let { username } = this.props.user;
+      let userId = parseInt(this.props.match.params.userId);
 
       return (
         <div className="user-show-container">
@@ -31,7 +32,10 @@ class UserShow extends React.Component {
                 <h2 className="title">{username}'s Feed</h2>
               </div>
               <div className="main-header-flex-child-2">
-                <StoryCreateLink />
+                <StoryCreateLink
+                  currentUser={this.props.currentUser}
+                  userId={userId}
+                />
               </div>
             </div>
           </div>
