@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import TextareaAutosize from "react-textarea-autosize";
 
 class StoryForm extends React.Component {
@@ -33,22 +34,43 @@ class StoryForm extends React.Component {
   }
 
   render() {
-    if (!this.props.story) {
+    if (!this.props.story || !this.props.currentUser) {
       return null;
     } else {
       const btnText =
         this.props.formType === "new" ? "Publish Story" : "Update Story";
+      let { id, username } = this.props.currentUser;
 
       return (
         <div className="story-form-main sf-flex-parent">
           <div className="story-form-header sf-flex-1">
             <div className="sf-header-flex-1">
-              <h2>StoryForm Header Text</h2>
+              <div className="story-index-item-footer-1">
+                <div className="story-index-item-user-img">
+                  <Link to={`/users/${id}`}>
+                    <i
+                      className="fa fa-user-circle-o fa-4x"
+                      aria-hidden="true"
+                    />
+                  </Link>
+                </div>
+
+                <div className="story-index-item-user-details">
+                  <div className="story-index-item-user-link">
+                    <Link to={`/users/${id}`}>{username}</Link>
+                  </div>
+                  <div className="story-index-item-user-date">
+                    <span>Draft</span>
+                  </div>
+                </div>
+              </div>
             </div>
+
             <div className="sf-header-flex-2">
               <div className="sf-spacer">&nbsp;</div>
             </div>
           </div>
+          <div className="sf-header-flex-2-err">[ERRORS]</div>
 
           <div className="story-form-box sf-flex-2">
             <form className="story-form-content">

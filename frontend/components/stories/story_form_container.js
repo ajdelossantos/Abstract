@@ -23,7 +23,11 @@ const mapStateToProps = (state, ownProps) => {
     formType = "edit";
   }
 
-  return { story, formType };
+  return {
+    story,
+    formType,
+    currentUser: state.session.currentUser
+  };
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {

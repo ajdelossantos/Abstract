@@ -8,6 +8,11 @@
   padding-top: 40px;
 }
 
+.story-form-header {
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
 .story-form-content {
   display: flex;
   flex-direction: column;
@@ -36,6 +41,7 @@
 }
 
 .sf-header-flex-1,
+.sf-header-flex-2-err,
 .sf-header-flex-2 {
   display: flex;
   flex: 1;
@@ -92,6 +98,7 @@
 
 .sf-title {
   font: 700 36px $sans-serif;
+  height: 48px;
 }
 
 .sf-title:focus {
@@ -120,7 +127,6 @@
 .sfb-flex-1 {
   position: relative;
   left: 200px;
-  border: 1px dashed red;
   padding-bottom: 50px;
 }
 
