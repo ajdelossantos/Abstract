@@ -15,16 +15,18 @@ body {
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
-  max-width: 450px;
-  width: 100%;
+  width: 450px;
   height: 250px;
   margin-bottom: 20px;
 }
 
 .story-index-item-flex-1 {
-  border-right: 1px dashed #eee;
+  // border-right: 1px dashed #eee;
   flex: 2;
   display: flex;
+  height: 250px;
+  width: 150px;
+  padding: 0;
 }
 
 .story-index-item-flex-2 {
@@ -32,12 +34,21 @@ body {
   display: flex;
   flex-direction: column;
   padding: 10px;
+  height: 250px;
+  width: 300px;
+  box-sizing: border-box;
 }
 
-.placeholder-txt {
-  color: #ddd;
-  padding: 10px;
+.story-index-item-flex-1 img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
 }
+
+// .placeholder-txt {
+//   color: #ddd;
+//   padding: 10px;
+// }
 
 .story-index-item-header-1 {
   flex: 1;
