@@ -26,12 +26,12 @@ const userGreeting = (currentUser, logout) => (
       <span className="header-username header-group-2-a">
         {currentUser.username}
       </span>
-      <span>
+      <Link to={`/users/${currentUser.id}`}>
         <i
           className="header-group-2-b fa fa-user-circle-o fa-3x"
           aria-hidden="true"
         />
-      </span>
+      </Link>
     </div>
   </hgroup>
 );

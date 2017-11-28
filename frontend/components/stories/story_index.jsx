@@ -29,7 +29,7 @@ class StoryIndex extends React.Component {
         <ul className="story-index-list">
           {this.props.stories.map(story => (
             <StoryIndexItem
-              key={story.id}
+              key={`story-index-${story.id}`}
               story={story}
               author={this.assignAuthor(story)}
             />

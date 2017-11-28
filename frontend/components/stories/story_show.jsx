@@ -27,7 +27,7 @@ class StoryShow extends React.Component {
           </div>
           <div className="article-img article-flex-child">{img_url}</div>
           <div className="article-text-container article-flex-child">
-            <p className="article-text">{body}</p>
+            <pre className="article-text">{body}</pre>
           </div>
         </div>
       );

@@ -11,10 +11,10 @@ const storiesReducer = (state = {}, action) => {
 
   switch (action.type) {
     case RECEIVE_ALL_STORIES:
-      return action.payload.stories;
+      return merge({}, action.payload.stories);
 
     case RECEIVE_STORY:
-      newState = {};
+      newState = merge({}, state);
       newState[action.payload.story.id] = action.payload.story;
       return newState;
 
