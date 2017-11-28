@@ -14,6 +14,10 @@ class UserShow extends React.Component {
     this.props.fetchUser(userId).then(this.props.fetchStories());
   }
 
+  // componentWillUpdate() {
+  //   this.props.history.push(`/users/${this.props.currentUser.id}`);
+  // }
+
   render() {
     if (!this.props.user || !this.props.stories) {
       return null;

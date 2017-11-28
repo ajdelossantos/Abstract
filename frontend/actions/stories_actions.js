@@ -5,8 +5,6 @@ export const RECEIVE_ALL_STORIES = "RECEIVE_ALL_STORIES";
 export const RECEIVE_STORY = "RECEIVE_STORY";
 export const REMOVE_STORY = "REMOVE_STORY";
 
-//TODO implement clearErrors!
-
 export const fetchStories = () => dispatch =>
   StoryApiUtil.fetchStories()
     .then(payload => dispatch(receiveAllStories(payload)))
@@ -31,7 +29,7 @@ export const updateStory = story => dispatch =>
 
 export const deleteStory = id => dispatch =>
   StoryApiUtil.deleteStory(id)
-    .then(responseStory => dispatch(removeStory(id)))
+    .then(payload => dispatch(removeStory(payload)))
     .fail(errors => dispatch(receiveErrors(errors.responseJSON)));
 
 const receiveAllStories = payload => ({
@@ -44,7 +42,7 @@ const receiveStory = payload => ({
   payload
 });
 
-const removeStory = id => ({
+const removeStory = payload => ({
   type: REMOVE_STORY,
-  id
+  payload
 });

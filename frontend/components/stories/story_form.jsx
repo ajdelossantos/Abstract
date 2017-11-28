@@ -26,9 +26,9 @@ class StoryForm extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    this.props
-      .action(this.state)
-      .then(() => this.props.history.push(`/stories/${this.props.story.id}`));
+    this.props.action(this.state).then(
+      data => this.props.history.push(`/stories/${data.payload.story.id}`) // let sleeping dogs lie...
+    );
   }
 
   update(field) {
