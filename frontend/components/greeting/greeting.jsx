@@ -14,27 +14,36 @@ const sessionLinks = () => (
   </div>
 );
 
-const userGreeting = (currentUser, logout) => (
-  <hgroup className="header-group header-flex-2">
-    <div className="header-group-1">
-      <button className="input-btn-1" onClick={logout}>
-        Sign Out
-      </button>
-    </div>
+const userGreeting = (currentUser, logout) => {
+  // TODO refactor into something else
+  // let handleLogout = event => {
+  //   event.preventDefault();
+  //   return logout()
+  //   .then(() => this.props.history.push(`/stories/${this.props.story.id}`)
+  // }
 
-    <div className="header-group-2">
-      <span className="header-username header-group-2-a">
-        {currentUser.username}
-      </span>
-      <Link to={`/users/${currentUser.id}`}>
-        <i
-          className="header-group-2-b fa fa-user-circle-o fa-3x"
-          aria-hidden="true"
-        />
-      </Link>
-    </div>
-  </hgroup>
-);
+  return (
+    <hgroup className="header-group header-flex-2">
+      <div className="header-group-1">
+        <button className="input-btn-1" onClick={logout}>
+          Sign Out
+        </button>
+      </div>
+
+      <div className="header-group-2">
+        <span className="header-username header-group-2-a">
+          {currentUser.username}
+        </span>
+        <Link to={`/users/${currentUser.id}`}>
+          <i
+            className="header-group-2-b fa fa-user-circle-o fa-3x"
+            aria-hidden="true"
+          />
+        </Link>
+      </div>
+    </hgroup>
+  );
+};
 
 const Greeting = ({ currentUser, logout }) =>
   currentUser ? userGreeting(currentUser, logout) : sessionLinks();

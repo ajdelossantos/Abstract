@@ -1,7 +1,16 @@
 .story-index-list {
-  columns: 2;
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
   padding: 0;
+  justify-content: space-around;
+}
+
+.story-index-item {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding: 15px;
 }

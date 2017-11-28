@@ -7,8 +7,14 @@ ul {
   -webkit-padding-start: 0;
 }
 
+input,
+textarea {
+  background-color: $pale-white;
+}
+
 body {
   color: $black;
+  background-color: $pale-white;
 }
 
 .title {

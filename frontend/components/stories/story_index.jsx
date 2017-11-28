@@ -21,7 +21,7 @@ class StoryIndex extends React.Component {
       <div>
         <header className="main-header-container">
           <div className="main-header-flex-1">
-            <h2 className="title">Recent Stories</h2>
+            <h2 className="title">Welcome Home!</h2>
           </div>
           <div className="main-header-flex-2">&nbsp;</div>
         </header>
