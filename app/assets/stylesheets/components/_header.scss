@@ -128,8 +128,7 @@
 
 .sf-err-list {
   padding: 10px 5px;
-  border: 1px solid $light-gray;
-  border-radius: 2px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -137,10 +136,12 @@
   width: 100%;
   max-width: 500px;
   height: 100%;
-  background-color: $off-white;
 }
 
 .sf-err-list li {
+  border: 1px solid $light-gray;
+  border-radius: 2px;
+  background-color: $off-white;
   color: $red;
   font-style: italic;
   margin: 0 auto;
@@ -149,9 +150,10 @@
   flex: 1;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid $light-gray;
+  min-width: 200px;
+  // border-bottom: 1px solid $light-gray;
 }
 
 .sf-err-list li:last-child {
-  border-bottom: none;
+  border-top: none;
 }

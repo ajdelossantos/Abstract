@@ -20,6 +20,10 @@ class StoryForm extends React.Component {
     this.setState(newProps.story);
   }
 
+  componentWillUnmount() {
+    this.props.clearErrors();
+  }
+
   handleSubmit(event) {
     event.preventDefault();
     this.props
@@ -31,6 +35,12 @@ class StoryForm extends React.Component {
     return event => {
       this.setState({ [field]: event.target.value });
     };
+  }
+
+  renderErrors() {
+    return this.props.errors.map((error, idx) => (
+      <li key={`error#${idx}`}>Oops! {error}</li>
+    ));
   }
 
   render() {
@@ -71,10 +81,7 @@ class StoryForm extends React.Component {
             </div>
           </div>
           <div className="sf-header-flex-2-err">
-            <ul className="sf-err-list">
-              <li>Oops. You haven't implemented errors yet.</li>
-              <li>Still, this is hella pretty though.</li>
-            </ul>
+            <ul className="sf-err-list">{this.renderErrors()}</ul>
           </div>
 
           <div className="story-form-box sf-flex-2">

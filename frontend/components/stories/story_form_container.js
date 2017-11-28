@@ -6,6 +6,7 @@ import {
   createStory,
   updateStory
 } from "../../actions/stories_actions";
+import { clearErrors } from "../../actions/errors_actions";
 
 const mapStateToProps = (state, ownProps) => {
   let story = {
@@ -24,6 +25,7 @@ const mapStateToProps = (state, ownProps) => {
   }
 
   return {
+    errors: state.errors,
     story,
     formType,
     currentUser: state.session.currentUser
@@ -38,6 +40,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 
   return {
     fetchStory: storyId => dispatch(fetchStory(storyId)),
+    clearErrors: errors => dispatch(clearErrors(errors)),
     action: story => dispatch(action(story))
   };
 };
