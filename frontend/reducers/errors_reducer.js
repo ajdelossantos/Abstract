@@ -6,6 +6,7 @@ const _nullErrors = Object.freeze([]);
 
 const errorsReducer = (state = _nullErrors, action) => {
   Object.freeze(state);
+  debugger;
 
   switch (action.type) {
     case RECEIVE_ERRORS:
