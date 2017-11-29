@@ -1,6 +1,7 @@
 import React from "react";
 import { StoryControlGroup } from "./story_control_group";
 import FollowsContainer from "../follows/follows_container";
+import CommentsIndexContainer from "../comments/comments_index_container";
 
 class StoryShow extends React.Component {
   constructor(props) {
@@ -68,6 +69,7 @@ class StoryShow extends React.Component {
           <div className="article-text-container article-flex-child">
             <pre className="article-text">{body}</pre>
           </div>
+          <CommentsIndexContainer />
         </div>
       );
     }

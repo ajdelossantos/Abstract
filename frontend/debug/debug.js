@@ -10,6 +10,7 @@ import {
   deleteStory
 } from "../actions/stories_actions";
 import { fetchUsers, fetchUser } from "../actions/users_actions";
+import { createComment, deleteComment } from "../actions/comments_actions";
 import merge from "lodash/merge";
 import * as Selectors from "../reducers/selectors";
 
@@ -29,6 +30,9 @@ const debugMode = store => {
 
   window.fetchUsers = fetchUsers;
   window.fetchUser = fetchUser;
+
+  window.createComment = createComment;
+  window.deleteComment = deleteComment;
 
   window.getAllUsers = Selectors.getAllUsers;
   window.getAllStories = Selectors.getAllStories;
