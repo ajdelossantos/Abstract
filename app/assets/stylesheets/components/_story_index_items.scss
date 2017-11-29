@@ -155,3 +155,9 @@ body {
   background-color: $red;
   color: #eee;
 }
+
+.pre-txt {
+  font: 400 12px $sans-serif;
+  white-space: pre-wrap;
+  font-style: italic;
+}

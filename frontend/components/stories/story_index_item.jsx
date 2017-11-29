@@ -45,7 +45,7 @@ class StoryIndexItem extends React.Component {
               <div className="sii-spacer">&nbsp;</div>
 
               <div className="story-index-item-article-1">
-                <article>{body_peek}</article>
+                <pre className="pre-txt">{body_peek}</pre>
               </div>
 
               <div className="story-index-item-footer-1">
