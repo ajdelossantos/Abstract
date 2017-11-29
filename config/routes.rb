@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     resource :session, only: [:create, :destroy]
     
     resources :stories, except: [:new, :edit] do
-      resources :comments, only: [:create]
+      resources :comments, only: [:create, :index]
     end
     
     resources :comments, only: [:destroy]

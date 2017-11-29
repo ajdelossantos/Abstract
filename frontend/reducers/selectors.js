@@ -1,5 +1,5 @@
-export const getAllUsers = ({ users }) =>
-  Object.keys(users).map(id => users[id]);
+export const getAllUsers = ({ users }) => Object.values(users);
 
-export const getAllStories = ({ stories }) =>
-  Object.keys(stories).map(id => stories[id]);
+export const getAllStories = ({ stories }) => Object.values(stories);
+
+export const getStoryComments = ({ comments }) => Object.values(comments);

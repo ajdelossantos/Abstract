@@ -1,20 +1,13 @@
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
 import StoryIndex from "./story_index";
-import {
-  fetchStories,
-  fetchStory,
-  createStory,
-  updateStory,
-  deleteStory
-} from "../../actions/stories_actions";
-import { fetchUsers, fetchUser } from "../../actions/users_actions";
-import { getAllUsers } from "../../reducers/selectors";
+import { fetchStories } from "../../actions/stories_actions";
+import { fetchUser } from "../../actions/users_actions";
+import { getAllUsers, getAllStories } from "../../reducers/selectors";
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    stories: Object.values(state.entities.stories),
-    // users: Object.values(state.entities.users)
+    stories: getAllStories(state.entities),
     users: getAllUsers(state.entities),
     currentUser: state.session.currentUser
   };
@@ -30,3 +23,13 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 export default withRouter(
   connect(mapStateToProps, mapDispatchToProps)(StoryIndex)
 );
+
+// import {
+//   fetchStories,
+//   fetchStory,
+//   createStory,
+//   updateStory,
+//   deleteStory
+// } from "../../actions/stories_actions";
+
+// import { fetchUsers, fetchUser } from "../../actions/users_actions";

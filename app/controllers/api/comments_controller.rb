@@ -14,6 +14,11 @@ class Api::CommentsController < ApplicationController
     end
   end
 
+  def index
+    story = Story.find(params[:story_id])
+    @comments = story.comments
+  end
+
   def destroy
     @comment = Comment.find(params[:id])
     @story = @comment.story

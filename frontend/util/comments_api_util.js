@@ -1,3 +1,9 @@
+export const fetchStoryComments = storyId =>
+  $.ajax({
+    method: "GET",
+    url: `api/stories/${storyId}/comments`
+  });
+
 export const createComment = (comment, storyId) =>
   $.ajax({
     method: "POST",

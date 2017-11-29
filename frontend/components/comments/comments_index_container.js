@@ -1,22 +1,25 @@
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
-import { fetchStory } from "../../actions/stories_actions";
-import { deleteComment } from "../../actions/comments_actions";
-import { fetchUsers } from "../../actions/users_actions";
+import { getStoryComments, getAllUsers } from "../../reducers/selectors";
+import {
+  fetchStoryComments,
+  deleteComment
+} from "../../actions/comments_actions";
+
 import CommentsIndex from "./comments_index";
 
 const mapStateToProps = (state, ownProps) => {
+  debugger;
   return {
-    comments: Object.values(state.entities.comments),
-    users: Object.values(state.entities.users),
+    comments: getStoryComments(state),
+    users: getAllUsers(state),
     currentUser: state.session.currentUser
   };
 };
 
-const mapDispatchToProps = (state, owmnProps) => {
+const mapDispatchToProps = (state, ownProps) => {
   return {
-    fetchStory: storyId => dispatch(fetchStory(storyId)),
-    fetchUsers: () => dispatch(fetchUsers()),
+    fetchStoryComments: storyId => dispatch(fetchStoryComments(storyId)),
     deleteComment: commentId => dispatch(deleteComment(commentId))
   };
 };
@@ -24,3 +27,8 @@ const mapDispatchToProps = (state, owmnProps) => {
 export default withRouter(
   connect(mapStateToProps, mapDispatchToProps)(CommentsIndex)
 );
+
+// import { fetchStory } from "../../actions/stories_actions";
+// import { fetchUsers } from "../../actions/users_actions";
+// fetchUsers: () => dispatch(fetchUsers())
+// fetchStory: storyId => dispatch(fetchStory(storyId))
