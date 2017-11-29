@@ -8,10 +8,21 @@
   white-space: pre-wrap;
 }
 
-.article-text-container,
 .article-title {
+  padding-left: 15px;
+}
+
+.article-text-container,
+.article-header {
   max-width: 700px;
   width: 100%;
+}
+
+.article-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
 }
 
 .article-flex-container {
@@ -37,4 +48,15 @@
   height: 400px;
   width: 100%;
   object-fit: contain;
+}
+
+.article-control-group > div {
+  border: 1px solid $medium-gray;
+  border-radius: 2px;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 120px;
 }

@@ -14,7 +14,7 @@ body {
   border-radius: 2px;
   display: flex;
   flex-direction: row;
-  box-sizing: border-box;
+  box-sizing: content-box;
   width: 450px;
   height: 250px;
   margin-bottom: 20px;
@@ -113,7 +113,7 @@ body {
 .story-control-group {
   position: relative;
   left: 137px;
-  bottom: 13px;
+  bottom: 12.5px;
   font-family: "Open Sans", sans-serif;
   border: 1px solid $light-gray;
   border-left: none;
@@ -137,11 +137,17 @@ body {
   align-items: center;
   padding: 0px 15px;
   width: 100%;
+  color: $medium-dark-gray;
 }
 
 .sc-link:hover {
   cursor: pointer;
-  background-color: $light-gray;
+  background-color: $light-green;
+  color: $black;
+}
+
+.sc-link-delete {
+  background-color: transparent;
 }
 
 .sc-link-delete:hover {

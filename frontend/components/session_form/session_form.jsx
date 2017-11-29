@@ -92,7 +92,7 @@ class SessionForm extends React.Component {
       headerText = "Join Abstract.";
       aboutText =
         "Create an account to curate your own stories, follow your favorite authors, and like the stories which resonate with you.";
-      navText = "Already have an account? ";
+      navText = "Want a demonstration or already have an account? ";
       guestBtn = "";
     }
 
@@ -100,7 +100,8 @@ class SessionForm extends React.Component {
       <div className="session-form-container">
         <form className="session-form-box">
           <div className="session-errors-container session-flex-0">
-            <ul className="session-list-errors">{this.renderErrors()}</ul>
+            &nbsp;
+            <ul className="sf-err-list">{this.renderErrors()}</ul>
           </div>
           <div className="session-form session-flex-1">
             <h2 className="session-form-header">{headerText}</h2>
