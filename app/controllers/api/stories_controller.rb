@@ -1,5 +1,5 @@
 class Api::StoriesController < ApplicationController
-  before_action :require_signed_in?, only: [:create, :update, :destroy]
+  before_action :require_signed_in!, only: [:create, :update, :destroy]
 
   def create
     @story = Story.new(story_params)

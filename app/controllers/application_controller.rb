@@ -27,9 +27,9 @@ class ApplicationController < ActionController::Base
     !!current_user
   end
 
-  def require_signed_in?
+  def require_signed_in!
     unless current_user
-      render json: { base: ['Invalid Credentials'] }, status: 401
+      render json: { base: ['Please sign in to continue'] }, status: 401
     end
   end
 end

@@ -19,6 +19,11 @@ class Story < ApplicationRecord
     foreign_key: :author_id,
     primary_key: :id
 
+  has_many :comments,
+    class_name: 'Comments',
+    foreign_key: :story_id,
+    primary_key: :id
+
   def body_peek
     self.body.truncate_words(20)
   end
