@@ -20,7 +20,7 @@ class Story < ApplicationRecord
     primary_key: :id
 
   has_many :comments,
-    class_name: 'Comments',
+    class_name: 'Comment',
     foreign_key: :story_id,
     primary_key: :id
 

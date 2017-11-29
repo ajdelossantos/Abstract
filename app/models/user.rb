@@ -24,7 +24,7 @@ class User < ApplicationRecord
     primary_key: :id
 
   has_many :authored_comments,
-    class_name: 'Comments',
+    class_name: 'Comment',
     foreign_key: :author_id,
     primary_key: :id
 

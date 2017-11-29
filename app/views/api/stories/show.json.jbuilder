@@ -5,7 +5,9 @@ json.user do
   json.partial! 'api/users/user', user: @story.author
 end
 json.comments do
-  @story.each do |story|
-    json.partial! 'api/comments/comment', comment: story.comments
+  @story.comments.each do |comment|
+    json.set! comment.id do
+      json.partial! 'api/comments/comment', comment: comment
+    end
   end
 end
