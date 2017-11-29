@@ -32,6 +32,7 @@ class CommentsIndex extends React.Component {
                 deleteComment={this.props.deleteComment}
                 author={this.assignAuthor(comment)}
                 currentUser={this.props.currentUser}
+                history={this.props.history}
               />
             ))}
           </ul>

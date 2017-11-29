@@ -23,7 +23,7 @@ class Api::CommentsController < ApplicationController
     @comment = Comment.find(params[:id])
     @story = @comment.story
     @comment.destroy!
-    render "api/stories/show"
+    render "api/comments/show"
   end
 
   private 

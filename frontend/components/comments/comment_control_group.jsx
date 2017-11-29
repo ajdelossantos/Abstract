@@ -8,6 +8,7 @@ class CommentControlGroup extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
+    this.props.deleteComment(this.props.commentId);
   }
 
   displayControl() {
@@ -28,7 +29,11 @@ class CommentControlGroup extends React.Component {
     } else {
       return (
         <div className="comment-control-group comments-ii-flex-3">
-          <button className="btn-reset input-btn-1" id="delete_comment">
+          <button
+            className="btn-reset input-btn-1"
+            id="delete_comment"
+            onClick={this.handleSubmit}
+          >
             Delete comment
           </button>
         </div>

@@ -11,7 +11,7 @@ class CommentsIndexItem extends React.Component {
     if (!this.props.comment) {
       return null;
     } else {
-      let { id, body, createdAt, authorId } = this.props.comment;
+      let { id, body, createdAt, authorId, storyId } = this.props.comment;
       let { deleteComment } = this.props.deleteComment;
       let { username, img_url } = this.props.author;
 
@@ -34,6 +34,8 @@ class CommentsIndexItem extends React.Component {
               commentId={id}
               authorId={authorId}
               currentUser={this.props.currentUser}
+              history={this.props.history}
+              storyId={storyId}
             />
           </div>
         </li>

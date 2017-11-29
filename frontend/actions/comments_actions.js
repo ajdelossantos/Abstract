@@ -17,7 +17,7 @@ export const createComment = (comment, storyId) => dispatch =>
 
 export const deleteComment = commentId => dispatch =>
   CommentsApiUtil.deleteComment(commentId).then(commentId =>
-    dispatch(deleteComment(commentId))
+    dispatch(removeComment(commentId))
   );
 
 const receiveComments = payload => ({
@@ -30,7 +30,7 @@ const receiveComment = comment => ({
   comment
 });
 
-const removeComment = commentId => ({
+const removeComment = comment => ({
   type: REMOVE_COMMENT,
-  commentId
+  comment
 });
