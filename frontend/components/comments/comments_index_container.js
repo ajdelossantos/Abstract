@@ -9,10 +9,9 @@ import {
 import CommentsIndex from "./comments_index";
 
 const mapStateToProps = (state, ownProps) => {
-  debugger;
   return {
-    comments: getStoryComments(state),
-    users: getAllUsers(state),
+    comments: getStoryComments(state.entities),
+    users: getAllUsers(state.entities),
     currentUser: state.session.currentUser
   };
 };
@@ -27,8 +26,3 @@ const mapDispatchToProps = (state, ownProps) => {
 export default withRouter(
   connect(mapStateToProps, mapDispatchToProps)(CommentsIndex)
 );
-
-// import { fetchStory } from "../../actions/stories_actions";
-// import { fetchUsers } from "../../actions/users_actions";
-// fetchUsers: () => dispatch(fetchUsers())
-// fetchStory: storyId => dispatch(fetchStory(storyId))

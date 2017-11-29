@@ -10,10 +10,9 @@ import { fetchUser } from "../../actions/users_actions";
 import { getAllUsers, getAllStories } from "../../reducers/selectors";
 
 const mapStateToProps = (state, ownProps) => {
-  debugger;
   return {
     story: state.entities.stories[parseInt(ownProps.match.params.storyId)],
-    author: state.entities.users,
+    users: state.entities.users,
     currentUser: state.session.currentUser
   };
 };

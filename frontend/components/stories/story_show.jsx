@@ -26,7 +26,7 @@ class StoryShow extends React.Component {
   }
 
   render() {
-    if (!this.props.story || !this.props.author) {
+    if (!this.props.story || !this.props.users) {
       return null;
     } else {
       let {
@@ -48,7 +48,7 @@ class StoryShow extends React.Component {
         <div className="article-flex-container">
           <div className="article-flex-child follows-container">
             <FollowsContainer
-              user={this.props.author}
+              user={this.props.users[author_id]}
               updated_at={updated_at}
             />
           </div>
@@ -72,6 +72,8 @@ class StoryShow extends React.Component {
           <div className="article-text-container article-flex-child">
             <pre className="article-text">{body}</pre>
           </div>
+          <CommentsIndexContainer />
+          <br />
         </div>
       );
     }
@@ -79,5 +81,3 @@ class StoryShow extends React.Component {
 }
 
 export default StoryShow;
-
-// <CommentsIndexContainer />;

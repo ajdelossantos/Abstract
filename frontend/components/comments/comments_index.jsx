@@ -9,27 +9,35 @@ class CommentsIndex extends React.Component {
   }
 
   componentDidMount() {
-    return this.props.fetchUsers();
+    let storyId = this.props.match.params.storyId;
+    this.props.fetchStoryComments(storyId);
   }
 
-  assignAuthor() {}
+  assignAuthor(comment) {
+    let author = this.props.users.find(user => user.id === comment.authorId);
+    return author;
+  }
 
   render() {
-    console.log(this.props);
-
-    // comment={comment}
-    // key={`comment-idx-itm-${comment.id}`}
-    // deleteComment={this.props.deleteComment}
-    // author={this.assignAuthor}
-    // currentUser={this.props.currentUser}
-
-    return (
-      <div className="comments-index-container">
-        <ul>
-          <CommentsIndexItem />
-        </ul>
-      </div>
-    );
+    if (!this.props.comments) {
+      return null;
+    } else {
+      return (
+        <div className="comments-index-container">
+          <ul>
+            {this.props.comments.map(comment => (
+              <CommentsIndexItem
+                comment={comment}
+                key={`comment-idx-itm-${comment.id}`}
+                deleteComment={this.props.deleteComment}
+                author={this.assignAuthor(comment)}
+                currentUser={this.props.currentUser}
+              />
+            ))}
+          </ul>
+        </div>
+      );
+    }
   }
 }
 

@@ -23,13 +23,3 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 export default withRouter(
   connect(mapStateToProps, mapDispatchToProps)(StoryIndex)
 );
-
-// import {
-//   fetchStories,
-//   fetchStory,
-//   createStory,
-//   updateStory,
-//   deleteStory
-// } from "../../actions/stories_actions";
-
-// import { fetchUsers, fetchUser } from "../../actions/users_actions";
