@@ -25,57 +25,88 @@ story1 = Story.create({
 "Reflecting On My Favorite Jazz Albums",
   body:
     "Nighthawk, Nighthawk Quartet
-    One of the most striking features of this quartet is its instrumentation, going without piano in the rhythm section and often employing two tenor saxophones.  The sound is lean and spare, rich with interplay, and rewarding in many unexpected ways.  The space created by the piano’s absence offers a unique opportunity for each instrument to speak and be heard in a different context as accompanist and improviser.  
+
+    One of the most striking features of this quartet is its instrumentation, going without piano in the rhythm section and often employing two tenor saxophones.  The sound is lean and spare, rich with interplay, and rewarding in many unexpected ways.  The space created by the piano’s absence offers a unique opportunity for each instrument to speak and be heard in a different context as accompanist and improviser.
+
     Both saxophones take full advantage of the harmonic and timbral opportunities presented by the unique aural space with remarkable clarity and solos full of imagination.  The listener won’t have any trouble differentiating between either Yasinitsky or Hagelganz on the tenor saxophones.  From the dirtiest blues to the highest-minded alterations, they play a careful balancing act that is stunning to behold.  The percussive elements Jarvis and Snider display in the rhythm section establish a chatter behind the soloists that feels like a different kind of accompaniment altogether.  Its unexpectedness is very refreshing.
+
     Between the angular The Board, the clever Wakeup Call, and everything in between, the album accomplishes a sound that is unbelievably cool.  Very cool, in fact.  Perhaps that statement is influenced by the relative rarity of the instrumentation, the dry and understated delivery of the music, or even the sort of aloofness so often associated with coolness that Nighthawk’s sound gives to the listener.  All together, Nighthawk makes a distinctive statement about being refined, about being hip.  And despite that, jazz isn’t ever too cool for the listener.Dave Hagelganz, Dave Hagelganz
     Hagelganz’s latest studio project is intimate, personal, and intense.  The quartet is tight and polished, laying down groves as slick as they seem effortless.  There is a sense of easiness and comfort which pervades the album⎯ no doubt it is the result of hours upon hours of work.  Having seen some of the rehearsals myself, I can attest to the rapport these players have built with each other in building this project up.
+
     Each track has the presence and warmth that characterizes the sound of both Hagelganz and his quartet.  The opening track, Vepishta, features a clever juxtaposition of latin and swing feels between the head and solo sections that never compromises the energy of either.  Though short, it introduces the album neatly and presents to the listener the kind of music to expect as the journey continues.
+
     Through each track, Hagelganz is thoughtful and deliberate, and his sound haunting.  There is an exotic, wandering quality to the solo performances of each member.  In a way, I am reminded of Aaron Lington’s Cape Breton album that I had previously reviewed; it is an understated, west coast sound without any frills and unnecessary pyrotechnics.  From start to finish, this album communicates the joy felt when jazz is at its best.  In a few words, the entire experience is thoroughly enjoyable at every level.
     
     ‘Round Da Korner, Delbert Bump–Greg Yasinitsky Quintet
-    ‘Round Da Korner features a thoughtful collection of originals that contain a staggering variety of ideas and grooves that still carry the influence and conviction of the blues sound so often associated with the organ.  While many associate the sound of the B3 in the rhythm section with late-night blues or funk, Bump creates a complete view of the flexibility often underutilized by many organ-centered groups.  
+
+    ‘Round Da Korner features a thoughtful collection of originals that contain a staggering variety of ideas and grooves that still carry the influence and conviction of the blues sound so often associated with the organ.  While many associate the sound of the B3 in the rhythm section with late-night blues or funk, Bump creates a complete view of the flexibility often underutilized by many organ-centered groups.
+
     The classic organ trio sound in this augmented not just by tenor saxophone, but by trumpet as well.  Yasinitsky’s and Homan’s contributions complement Bump’s originals.  Far from an “organ plus two,” the listener gets a sense that this group is a collaboration.  The solos are aggressive and on-point with nary a blip in the time-feel put down by the rhythm section.  The technical facility delivered by all involved is nothing short of mesmerizing, enabling a breezy lift in each track.
+
     Personally, Afternoon of Dreams is my favorite track.  As a ballad, this piece gives every instrument in the ensemble the rare chance to really sing over the rich wash of sound which is the exclusive realm of the B3.  The exclusion of a traditional blues chart is an interesting choice, considering the history of the instrument.  Audacious as it may seem,‘Round Da Korner profits from this decision creatively without sacrificing the pocket and feel such a format brings.
+
     Pulled together from single takes, the amount of precision delivered by all involved is a monument to the collective musicality of the quintet.  Having the pleasure of witnessing the sessions that comprise this project in-person, I’m glad to see that the final product is so successful.
     
     “The Best of” The Roulette Years, Count Basie
+
     A large collection of Count Basie’s earlier big band efforts, this compilation album is representative of his earlier style and work with, among other composers, Neal Hefti.  Recorded between 1957 and 1962, the personnel of the ensemble is the same as those present is his later albums characterized by his collaborations with Sammy Nestico and Frank Foster.  Culled from a collection of tracks featuring the band outside of an accompaniment context, these pieces are an interesting look at a transitional period into “late Basie.”  While the band sacrifices some of its appeal to dancing sensibilities, the overall result swings harder than some bands can even dream of.
+
     Guest appearances include Eddie “Lockjaw” Davis, Frank Foster, and Bennie Carter on their respective saxophones.  As a compilation album, the solos can vary wildly from track to track.  However, the saxophone section under Marshall Royal’s lead still carries that characteristic sound often imitated in big bands the world over.  In short, Basie’s band provides the consistent experience throughout that seasoned listeners have come to expect of the Basie band.
+
     With pieces ranging from the classic Cute to the blazing fast The Kid From Red Bank, this album serves as a good primer for the jazz neophyte looking to discover the classic Count Basie sound.  I do admit, listening to the entire album in one sitting is challenging and can even be monotonous at times.  Despite this, “The Best of” The Roulette Years for its time is the big band sounding at its best.
     
     Getz/Gilberto, Stan Getz and João Gilberto
-    It is a shame that so many compare the brilliance of Getz and João Gilberto’s collaboration with the banal likes of elevator music.  In that vein, perhaps only true artistic genius, such as the classic The Girl From Ipanema, could inspire the bossa nova craze in the United States that would lead to so many bland clones.  
-    This 1964 release features an unexpected combination of Astrud Gilberto’s delicate voice and Getz’s supremely tasteful tenor saxophone.  Having never sung professionally before, there is a slight waver in A. Gilberto’s voice.  It is often quoted that critics wished that the recording would have been completed without her.  However, a Grammy for her efforts here and launching a successful career singing bossa nova speaks volumes for her skill and attitude as a musician.  
+
+    It is a shame that so many compare the brilliance of Getz and João Gilberto’s collaboration with the banal likes of elevator music. In that vein, perhaps only true artistic genius, such as the classic The Girl From Ipanema, could inspire the bossa nova craze in the United States that would lead to so many bland clones. 
+
+    This 1964 release features an unexpected combination of Astrud Gilberto’s delicate voice and Getz’s supremely tasteful tenor saxophone. Having never sung professionally before, there is a slight waver in A. Gilberto’s voice.  It is often quoted that critics wished that the recording would have been completed without her. However, a Grammy for her efforts here and launching a successful career singing bossa nova speaks volumes for her skill and attitude as a musician.
+
     Even without the technical playing typically demanded of a saxophone in the jazz setting, Getz’s lines are an example of precisely how the right sound and melodic lines are not just effective, but beautiful in their own right.  While his remark about “always playing the melody” may be some showboating on his part, his playing always follows a logical train of thought from idea to idea that is consistent with the melodic materials presented up front.  His sound and ideas are genius in their own right, and serve as a delightful complement to J. Gilberto’s guitar work.
-    Both The Girl From Ipanema and Desafinado are jazz standards still performed and covered by artists across all genres and remain important contributions to the repertoire.  Getz/Gilberto is considered a classic in the jazz world, and rightfully deserves such a title.  
+    Both The Girl From Ipanema and Desafinado are jazz standards still performed and covered by artists across all genres and remain important contributions to the repertoire.  Getz/Gilberto is considered a classic in the jazz world, and rightfully deserves such a title.
 
     Giant Steps, John Coltrane
-    The famous 1959 album Giant Steps and its title track established Coltrane’s reputation as a band leader virtually overnight.  As an exploration of jazz harmony unbounded by the ubiquitous ii-V7 cadential motion characterizing the archetype of compositions before it, the entire album is an effective proof of concept and critical in propelling the evolution of Jazz forward.  
-    Even Coltrane once remarked about the title track that he wished it had sounded less like he was practicing.  In his defense, he was performing groundbreaking work that even Flanagan audibly struggled with on his solo.  If anything, Coltrane’s unique concept is still a present and driving force among generations of saxophonists today.  For as much press as the piece Giant Steps gets in the jazz world, my favorite track is Naima.  Its harmonies are as lush and beautiful as Coltrane’s sound, free from the frenetic hard-bop energy present in the rest of the album.  
+
+    The famous 1959 album Giant Steps and its title track established Coltrane’s reputation as a band leader virtually overnight.  As an exploration of jazz harmony unbounded by the ubiquitous ii-V7 cadential motion characterizing the archetype of compositions before it, the entire album is an effective proof of concept and critical in propelling the evolution of Jazz forward.
+
+    Even Coltrane once remarked about the title track that he wished it had sounded less like he was practicing.  In his defense, he was performing groundbreaking work that even Flanagan audibly struggled with on his solo.  If anything, Coltrane’s unique concept is still a present and driving force among generations of saxophonists today.  For as much press as the piece Giant Steps gets in the jazz world, my favorite track is Naima.  Its harmonies are as lush and beautiful as Coltrane’s sound, free from the frenetic hard-bop energy present in the rest of the album.
+
     In perspective, Giant Steps is an arrival in the jazz world, and a sign of things to come.  Though only Giant Steps, Naima, and Mr. PC really survive in the jazz repertoire as commonly played, Coltrane insisted later that the improvisation contributes just as much to a composition as does the material “in ink.”  While later projects, such as A Love Supreme would prove to be a later development on that theme, the album Giant Steps is insightful in that it grants the listener a glimpse into a turning point in Coltrane’s career.  Armed with that realization, the listening experience is certainly a gratifying one.
 
     
     The Thelonius Monk Quartet with John Coltrane ⎯ at Carnegie Hall, The Thelonius Monk Quartet
+
     The story behind this album’s late-release is a legend equal to the greatness of the group it records: a long lost recording found by coincidence in the annals of the Library of Congress delivers a rare look into the famous collaboration between John Coltrane and Thelonius Monk.  Its discovery helps fill a gap in jazz history, as the collaboration between Monk and Coltrane is well-documented but not well-recorded.  Even with the last track having a significant portion missing, this 1957 album date stands as a completed product.
-    Together, they explore unorthodox uses of space, melody, and harmony with a result that is inimitable and unique.  Crepuscule With Nellie is a fascinating example.  Featuring a protracted piano solo and melodic duet between Coltrane and Monk, the strength of Monk’s musical conviction and Coltrane’s sound show how a small-ensemble jazz piece can still be compelling without a traditional improvisation section.  
+
+    Together, they explore unorthodox uses of space, melody, and harmony with a result that is inimitable and unique.  Crepuscule With Nellie is a fascinating example.  Featuring a protracted piano solo and melodic duet between Coltrane and Monk, the strength of Monk’s musical conviction and Coltrane’s sound show how a small-ensemble jazz piece can still be compelling without a traditional improvisation section.
+
     In Coltrane’s improvisational work, one can hear the connective threads between his work as a side man for Miles Davis and his own foray as a bandleader in his album Giant Steps.  The harmonic ideas and their motivic execution that would become Giant Steps begin to take shape in Coltrane’s work with Monk.
+
     The group itself plays with fluency, though I can’t help shake the feeling the Monk’s keyboard work tied everyone together on-stage.  While I cannot remark on how successful these pieces might have been without his presence to carry the band, the end result is clever and unexpected.  They sound comfortable, and the pieces sound compelling.  I hope the experience is just as eye-opening to me as it would have been to Coltrane.
 
     Birds of a Feather, The Phil Woods Quartet
+
     Released in 1982, Birds of a Feather is unmistakably and uncompromisingly “Phil Woods-y.” He plays with the unrelenting forward motion and soul-piercing sparkle that reveals his study with Charlie Parker so many years ago.  The rhythm section behind him is more than up to the task of keeping pace and keeps the grooves going behind Woods effectively.  Hal Galper is on piano, Bill Goodwin on drums, and Steve Gilmore on bass.
+
     His presentation of Horace Silver’s Nica’s Dream is inspiring.  In sharp contrast to the usually relaxed feel of the opening phrases, Woods manages to infect the rest of the material with the energy of the bridge section through a clever use of the mambo groove.  In a blazingly fast Star Eyes, he echoes Parker’s rendition of the piece so many years ago.  The ballad My Old Flame gives everyone a chance to spread out and introduce some space in an otherwise very busy album.
+
     In a time in jazz where cool bop, funk, and fusion had come to play their role in shaping the genre, a traditional hard bop album featuring traditional standards among Woods’s own compositions might sound out of place.  However, it is in this environment where Woods shines and thrives.  While this album is not groundbreaking in its own right, it is a solid showing on behalf of Woods and helps cement his place as a legend on alto saxophone and in jazz.
     
     Book Review: Miles, The Autobiography
+
     Of the various expletives which litter Miles, The Autobiography, I have never really thought of these terms, such as the one which refers to people who associate with mothers, as a compliment.  Quincy Troupe frames the material af if they were interviews with the words coming from Davis’s own mouth.  The result is a fascinating and bracingly honest story of the jazz world as told by Miles Davis himself.
+
     The book is presented as a chronological stream of consciousness.  Within its contents are some nineteen chapters, not including the Prologue and Acknowledgements.  And index is included for ease of use, though a table of contents is not present or really necessary.
+
     Overall, the story which Davis weaves never fails to be interesting as he presents a running commentary of the historical events in his life.  From his childhood and all the way through each phase of jazz that he helped defined, he keeps a consistent narration of his honest views of the people, places, music, and himself.  While it may be tempting to dismiss the almost constant stream of expletives as colloquialisms or even distractions, I think that it establishes an important part of his attitude and narrative.  His downright honestly about many personal views is enticing as a reader and is remarkably expressive once given a chance.
+
     Along with the frankness of his discussions comes some fairly interesting conclusions about his personal life, for me.  I am thoroughly amused with how he loves clothes and keeping a hip appearance.  He sometimes seems selfish regarding his own needs.  He appears thoroughly racist in his monologues, though not without righteous motivation.  He has a taste for young women which lands himself into trouble at times.  He is attracted to the essence of hipness and coolness and very much enjoys being desired, as a person and as a musician.  His relationship with drugs is a chimeric struggle: sober at one time and deliriously addicted at another.
+
     Most audiences are aware of Miles artistic output, and how his sound and  musical ensembles have changed so much over the decades of his life and ours as well.  This autobiography fills in the personal gaps, and paints a very realistic picture of him as a person.  It lets the reader see the personal development and growth of the life that inspired the art.  The best thing that Miles, The Autobiography does is present Miles as a person, and presents him in a way that he would have appeared to us in person.  The material of the book maintains this attractive quality throughout.
     The amount of historical material in the book is staggering.   At times, it can be a little difficult to keep up with Davis’s narrative spanning the birth of bebop all the way to the electric developments in the mid ‘80s.  My previous mentors joke that jazz never had a defining sound for the ‘90s decade because Davis passed away before he could invent it.
+    
     There’s a bit of truth to the previous statement, in that there are hardly any comparable figures in jazz who have stayed relevant for so long.  His collaborations with young artists kept his tastes fresh.  That obsession with cool and hip, in combination with his musical genius, created within him a sensibility and taste that, artistically, transcends time.  In all, Miles, The Autobiography is a revealing yet entertaining look into the entire process that has shaped Davis’s life and art.",
   img_url:
-    "story_1.png",
+    "story_default.png",
   author_id:
     user2.id
   })
@@ -83,91 +114,15 @@ story1 = Story.create({
   story2 = Story.create({
     title: "How I Wrote Poor Richard's Almanac",
     body:
-      "In 1732 I first publish'd my Almanack, under the name of Richard
-      Saunders; it was continu'd by me about twenty-five years, commonly
-      call'd Poor Richard's Almanac. I endeavour'd to make it both
-      entertaining and useful, and it accordingly came to be in such demand,
-      that I reap'd considerable profit from it, vending annually near ten
-      thousand. And observing that it was generally read, scarce any
-      neighborhood in the province being without it, I consider'd it as a
-      proper vehicle for conveying instruction among the common people, who
-      bought scarcely any other books; I therefore filled all the little
-      spaces that occurr'd between the remarkable days in the calendar with
-      proverbial sentences, chiefly such as inculcated industry and
-      frugality, as the means of procuring wealth, and thereby securing
-      virtue; it being more difficult for a man in want, to act always
-      honestly, as, to use here one of those proverbs, it is hard for an
-      empty sack to stand upright.
-      These proverbs, which contained the wisdom of many ages and nations, I
-      assembled and form'd into a connected discourse prefix'd to the Almanack
-      of 1757, as the harangue of a wise old man to the people attending an
-      auction. The bringing all these scatter'd councils thus into a focus
-      enabled them to make greater impression. The piece, being universally
-      approved, was copied in all the newspapers of the Continent; reprinted
-      in Britain on a broadside, to be stuck up in houses; two translations
-      were made of it in French, and great numbers bought by the clergy and
-      gentry, to distribute gratis among their poor parishioners and tenants.
-      In Pennsylvania, as it discouraged useless expense in foreign
-      superfluities, some thought it had its share of influence in producing
-      that growing plenty of money which was observable for several years
-      after its publication.
-      I considered my newspaper, also, as another means of communicating
-      instruction, and in that view frequently reprinted in it extracts from
-      the Spectator, and other moral writers; and sometimes publish'd little
-      pieces of my own, which had been first composed for reading in our
-      Junto. Of these are a Socratic dialogue, tending to prove that,
-      whatever might be his parts and abilities, a vicious man could not
-      properly be called a man of sense; and a discourse on self-denial,
-      showing that virtue was not secure till its practice became a
-      habitude, and was free from the opposition of contrary inclinations.
-      These may be found in the papers about the beginning of 1735.
-      In the conduct of my newspaper, I carefully excluded all libeling and
-      personal abuse, which is of late years become so disgraceful to our
-      country. Whenever I was solicited to insert anything of that kind, and
-      the writers pleaded, as they generally did, the liberty of the press,
-      and that a newspaper was like a stage-coach, in which anyone who would
-      pay had a right to a place, my answer was, that I would print the
-      piece separately if desired, and the author might have as many copies
-      as he pleased to distribute himself, but that I would not take upon me
-      to spread his detraction; and that, having contracted with my
-      subscribers to furnish them with what might be either useful or
-      entertaining, I could not fill their papers with private altercation,
-      in which they had no concern, without doing them manifest injustice.
-      Now, many of our printers make no scruple of gratifying the malice of
-      individuals by false accusations of the fairest characters among
-      ourselves, augmenting animosity even to the producing of duels; and
-      are, moreover, so indiscreet as to print scurrilous reflections on the
-      government of neighboring states, and even on the conduct of our best
-      national allies, which may be attended with the most pernicious
-      consequences. These things I mention as a caution to young printers,
-      and that they may be encouraged not to pollute their presses and
-      disgrace their profession by such infamous practices, but refuse
-      steadily, as they may see by my example that such a course of conduct
-      will not, on the whole, be injurious to their interests.
-      In 1733 I sent one of my journeymen to Charleston, South Carolina,
-      where a printer was wanting. I furnish'd him with a press and letters,
-      on an agreement of partnership, by which I was to receive one-third of
-      the profits of the business, paying one-third of the expense. He was a
-      man of learning, and honest but ignorant in matters of account; and,
-      tho' he sometimes made me remittances, I could get no account from
-      him, nor any satisfactory state of our partnership while he lived. On
-      his decease, the business was continued by his widow, who, being born
-      and bred in Holland, where, as I have been inform'd, the knowledge of
-      accounts makes a part of female education, she not only sent me as
-      clear a state as she could find of the transactions past, but
-      continued to account with the greatest regularity and exactness every
-      quarter afterwards, and managed the business with such success, that
-      she not only brought up reputably a family of children, but, at the
-      expiration of the term, was able to purchase of me the printing-house,
-      and establish her son in it.
-      I mention this affair chiefly for the sake of recommending that branch
-      of education for our young females, as likely to be of more use to
-      them and their children, in case of widowhood, than either music or
-      dancing, by preserving them from losses by imposition of crafty men,
-      and enabling them to continue, perhaps, a profitable mercantile house,
-      with establish'd correspondence, till a son is grown up fit to
-      undertake and go on with it, to the lasting advantage and enriching of
-      the family.",
+      "In 1732 I first publish'd my Almanack, under the name of Richard Saunders; it was continu'd by me about twenty-five years, commonly call'd Poor Richard's Almanac. I endeavour'd to make it both entertaining and useful, and it accordingly came to be in such demand, that I reap'd considerable profit from it, vending annually near ten thousand. And observing that it was generally read, scarce any neighborhood in the province being without it, I consider'd it as a proper vehicle for conveying instruction among the common people, who bought scarcely any other books; I therefore filled all the little spaces that occurr'd between the remarkable days in the calendar with proverbial sentences, chiefly such as inculcated industry and frugality, as the means of procuring wealth, and thereby securing virtue; it being more difficult for a man in want, to act always honestly, as, to use here one of those proverbs, it is hard for an empty sack to stand upright.
+      
+      These proverbs, which contained the wisdom of many ages and nations, I assembled and form'd into a connected discourse prefix'd to the Almanack of 1757, as the harangue of a wise old man to the people attending an auction. The bringing all these scatter'd councils thus into a focus enabled them to make greater impression. The piece, being universally approved, was copied in all the newspapers of the Continent; reprinted in Britain on a broadside, to be stuck up in houses; two translations were made of it in French, and great numbers bought by the clergy and gentry, to distribute gratis among their poor parishioners and tenants. In Pennsylvania, as it discouraged useless expense in foreign superfluities, some thought it had its share of influence in producing that growing plenty of money which was observable for several years after its publication.
+      
+      I considered my newspaper, also, as another means of communicating instruction, and in that view frequently reprinted in it extracts from the Spectator, and other moral writers; and sometimes publish'd little pieces of my own, which had been first composed for reading in our Junto. Of these are a Socratic dialogue, tending to prove that, whatever might be his parts and abilities, a vicious man could not properly be called a man of sense; and a discourse on self-denial, showing that virtue was not secure till its practice became a habitude, and was free from the opposition of contrary inclinations. These may be found in the papers about the beginning of 1735. In the conduct of my newspaper, I carefully excluded all libeling and personal abuse, which is of late years become so disgraceful to our country. Whenever I was solicited to insert anything of that kind, and the writers pleaded, as they generally did, the liberty of the press, and that a newspaper was like a stage-coach, in which anyone who would pay had a right to a place, my answer was, that I would print the piece separately if desired, and the author might have as many copies as he pleased to distribute himself, but that I would not take upon me to spread his detraction; and that, having contracted with my subscribers to furnish them with what might be either useful or entertaining, I could not fill their papers with private altercation, in which they had no concern, without doing them manifest injustice. Now, many of our printers make no scruple of gratifying the malice of individuals by false accusations of the fairest characters among ourselves, augmenting animosity even to the producing of duels; and are, moreover, so indiscreet as to print scurrilous reflections on the government of neighboring states, and even on the conduct of our best national allies, which may be attended with the most pernicious consequences. These things I mention as a caution to young printers, and that they may be encouraged not to pollute their presses and disgrace their profession by such infamous practices, but refuse steadily, as they may see by my example that such a course of conduct will not, on the whole, be injurious to their interests.
+      
+      In 1733 I sent one of my journeymen to Charleston, South Carolina, where a printer was wanting. I furnish'd him with a press and letters, on an agreement of partnership, by which I was to receive one-third of the profits of the business, paying one-third of the expense. He was a man of learning, and honest but ignorant in matters of account; and, tho' he sometimes made me remittances, I could get no account from him, nor any satisfactory state of our partnership while he lived. On his decease, the business was continued by his widow, who, being born and bred in Holland, where, as I have been inform'd, the knowledge of accounts makes a part of female education, she not only sent me as clear a state as she could find of the transactions past, but continued to account with the greatest regularity and exactness every quarter afterwards, and managed the business with such success, that she not only brought up reputably a family of children, but, at the expiration of the term, was able to purchase of me the printing-house, and establish her son in it.
+      
+      I mention this affair chiefly for the sake of recommending that branch of education for our young females, as likely to be of more use to them and their children, in case of widowhood, than either music or dancing, by preserving them from losses by imposition of crafty men, and enabling them to continue, perhaps, a profitable mercantile house, with establish'd correspondence, till a son is grown up fit to undertake and go on with it, to the lasting advantage and enriching of the family.",
     img_url:
       "story_default.png",
     author_id:
@@ -178,103 +133,18 @@ story1 = Story.create({
     title:
       "I Did WAY More Than a Key on A Kite!",
     body:
-      "Before I proceed in relating the part I had in public affairs under
-      this new governor's administration, it may not be amiss here to give
-      some account of the rise and progress of my philosophical reputation.
-      In 1746, being at Boston, I met there with a Dr. Spence, who was
-      lately arrived from Scotland, and show'd me some electric experiments.
-      They were imperfectly perform'd, as he was not very expert; but, being
-      on a subject quite new to me, they equally surpris'd and pleased me.
-      Soon after my return to Philadelphia, our library company receiv'd
-      from Mr. P. Collinson, Fellow of the Royal Society of London, a
-      present of a glass tube, with some account of the use of it in making
-      such experiments. I eagerly seized the opportunity of repeating what I
-      had seen at Boston; and, by much practice, acquired great readiness in
-      performing those, also, which we had an account of from England,
-      adding a number of new ones. I say much practice, for my house was
-      continually full, for some time, with people who came to see these new
-      wonders.
-      To divide a little this incumbrance among my friends, I caused a
-      number of similar tubes to be blown at our glass-house, with which
-      they furnish'd themselves, so that we had at length several
-      performers. Among these, the principal was Mr. Kinnersley, an
-      ingenious neighbour, who, being out of business, I encouraged to
-      undertake showing the experiments for money, and drew up for him two
-      lectures, in which the experiments were rang'd in such order, and
-      accompanied with such explanations in such method, as that the
-      foregoing should assist in comprehending the following. He procur'd an
-      elegant apparatus for the purpose, in which all the little machines
-      that I had roughly made for myself were nicely form'd by
-      instrument-makers. His lectures were well attended, and gave great
-      satisfaction; and after some time he went thro' the colonies,
-      exhibiting them in every capital town, and pick'd up some money. In
-      the West India islands, indeed, it was with difficulty the experiments
-      could be made, from the general moisture of the air.
-      Oblig'd as we were to Mr. Collinson for his present of the tube, etc.,
-      I thought it right he should be inform'd of our success in using it,
-      and wrote him several letters containing accounts of our experiments.
-      He got them read in the Royal Society, where they were not at first
-      thought worth so much notice as to be printed in their Transactions.
-      One paper, which I wrote for Mr. Kinnersley, on the sameness of
-      lightning with electricity,[107] I sent to Dr. Mitchel, an acquaintance
-      of mine, and one of the members also of that society, who wrote me
-      word that it had been read, but was laughed at by the connoisseurs.
-      The papers, however, being shown to Dr. Fothergill, he thought them of
-      too much value to be stifled, and advis'd the printing of them. Mr.
-      Collinson then gave them to _Cave_ for publication in his Gentleman's
-      Magazine; but he chose to print them separately in a pamphlet, and Dr.
-      Fothergill wrote the preface. Cave, it seems, judged rightly for his
-      profit, for by the additions that arrived afterward, they swell'd to a
-      quarto volume, which has had five editions, and cost him nothing for
-      copy-money.
-      It was, however, some time before those papers were much taken notice
-      of in England. A copy of them happening to fall into the hands of the
-      Count de Buffon, a philosopher deservedly of great reputation in
-      France, and, indeed, all over Europe, he prevailed with M. Dalibard
-      to translate them into French, and they were printed at Paris. The
-      publication offended the Abbé Nollet, preceptor in Natural Philosophy
-      to the royal family, and an able experimenter, who had form'd and
-      publish'd a theory of electricity, which then had the general vogue.
-      He could not at first believe that such a work came from America, and
-      said it must have been fabricated by his enemies at Paris, to decry
-      his system. Afterwards, having been assur'd that there really existed
-      such a person as Franklin at Philadelphia, which he had doubted, he
-      wrote and published a volume of Letters, chiefly address'd to me,
-      defending his theory, and denying the verity of my experiments, and of
-      the positions deduc'd from them.
+      "Before I proceed in relating the part I had in public affairs under this new governor's administration, it may not be amiss here to give some account of the rise and progress of my philosophical reputation. In 1746, being at Boston, I met there with a Dr. Spence, who was lately arrived from Scotland, and show'd me some electric experiments. They were imperfectly perform'd, as he was not very expert; but, being on a subject quite new to me, they equally surpris'd and pleased me. Soon after my return to Philadelphia, our library company receiv'd from Mr. P. Collinson, Fellow of the Royal Society of London, a present of a glass tube, with some account of the use of it in making such experiments. I eagerly seized the opportunity of repeating what I had seen at Boston; and, by much practice, acquired great readiness in performing those, also, which we had an account of from England, adding a number of new ones. I say much practice, for my house was continually full, for some time, with people who came to see these new wonders. 
+      
+      To divide a little this incumbrance among my friends, I caused a number of similar tubes to be blown at our glass-house, with which they furnish'd themselves, so that we had at length several performers. Among these, the principal was Mr. Kinnersley, an ingenious neighbour, who, being out of business, I encouraged to undertake showing the experiments for money, and drew up for him two lectures, in which the experiments were rang'd in such order, and accompanied with such explanations in such method, as that the foregoing should assist in comprehending the following. He procur'd an elegant apparatus for the purpose, in which all the little machines that I had roughly made for myself were nicely form'd by instrument-makers. His lectures were well attended, and gave great satisfaction; and after some time he went thro' the colonies, exhibiting them in every capital town, and pick'd up some money. In the West India islands, indeed, it was with difficulty the experiments could be made, from the general moisture of the air.
+      
+      Oblig'd as we were to Mr. Collinson for his present of the tube, etc., I thought it right he should be inform'd of our success in using it, and wrote him several letters containing accounts of our experiments. He got them read in the Royal Society, where they were not at first thought worth so much notice as to be printed in their Transactions. One paper, which I wrote for Mr. Kinnersley, on the sameness of lightning with electricity,[107] I sent to Dr. Mitchel, an acquaintance of mine, and one of the members also of that society, who wrote me word that it had been read, but was laughed at by the connoisseurs. The papers, however, being shown to Dr. Fothergill, he thought them of too much value to be stifled, and advis'd the printing of them. Mr. Collinson then gave them to _Cave_ for publication in his Gentleman's Magazine; but he chose to print them separately in a pamphlet, and Dr. Fothergill wrote the preface. Cave, it seems, judged rightly for his profit, for by the additions that arrived afterward, they swell'd to a quarto volume, which has had five editions, and cost him nothing for copy-money.
+
+      It was, however, some time before those papers were much taken notice of in England. A copy of them happening to fall into the hands of the Count de Buffon, a philosopher deservedly of great reputation in France, and, indeed, all over Europe, he prevailed with M. Dalibard to translate them into French, and they were printed at Paris. The publication offended the Abbé Nollet, preceptor in Natural Philosophy to the royal family, and an able experimenter, who had form'd and publish'd a theory of electricity, which then had the general vogue. He could not at first believe that such a work came from America, and said it must have been fabricated by his enemies at Paris, to decry his system. Afterwards, having been assur'd that there really existed such a person as Franklin at Philadelphia, which he had doubted, he wrote and published a volume of Letters, chiefly address'd to me, defending his theory, and denying the verity of my experiments, and of the positions deduc'd from them.
       ...
-      What gave my book the more sudden and general celebrity, was the
-      success of one of its proposed experiments, made by Messrs. Dalibard
-      and De Lor at Marly, for drawing lightning from the clouds. This
-      engag'd the public attention everywhere. M. de Lor, who had an
-      apparatus for experimental philosophy, and lectur'd in that branch of
-      science, undertook to repeat what he called the _Philadelphia
-      Experiments_; and, after they were performed before the king and
-      court, all the curious of Paris flocked to see them. I will not swell
-      this narrative with an account of that capital experiment, nor of the
-      infinite pleasure I receiv'd in the success of a similar one I made
-      soon after with a kite at Philadelphia, as both are to be found in the
-      histories of electricity.
-      Dr. Wright, an English physician, when at Paris, wrote to a friend,
-      who was of the Royal Society, an account of the high esteem my
-      experiments were in among the learned abroad, and of their wonder that
-      my writings had been so little noticed in England. The society, on
-      this, resum'd the consideration of the letters that had been read to
-      them; and the celebrated Dr. Watson drew up a summary account of them,
-      and of all I had afterwards sent to England on the subject, which he
-      accompanied with some praise of the writer. This summary was then
-      printed in their Transactions; and some members of the society in
-      London, particularly the very ingenious Mr. Canton, having verified
-      the experiment of procuring lightning from the clouds by a pointed
-      rod, and acquainting them with the success, they soon made me more
-      than amends for the slight with which they had before treated me.
-      Without my having made any application for that honour, they chose me
-      a member, and voted that I should be excus'd the customary payments,
-      which would have amounted to twenty-five guineas; and ever since have
-      given me their Transactions gratis. They also presented me with the
-      gold medal of Sir Godfrey Copley for the year 1753, the delivery of
-      which was accompanied by a very handsome speech of the president, Lord
-      Macclesfield, wherein I was highly honoured.",
+      
+      What gave my book the more sudden and general celebrity, was the success of one of its proposed experiments, made by Messrs. Dalibard and De Lor at Marly, for drawing lightning from the clouds. This engag'd the public attention everywhere. M. de Lor, who had an apparatus for experimental philosophy, and lectur'd in that branch of science, undertook to repeat what he called the _Philadelphia Experiments_; and, after they were performed before the king and court, all the curious of Paris flocked to see them. I will not swell this narrative with an account of that capital experiment, nor of the infinite pleasure I receiv'd in the success of a similar one I made soon after with a kite at Philadelphia, as both are to be found in the histories of electricity.
+      
+      Dr. Wright, an English physician, when at Paris, wrote to a friend, who was of the Royal Society, an account of the high esteem my experiments were in among the learned abroad, and of their wonder that my writings had been so little noticed in England. The society, on this, resum'd the consideration of the letters that had been read to them; and the celebrated Dr. Watson drew up a summary account of them, and of all I had afterwards sent to England on the subject, which he accompanied with some praise of the writer. This summary was then printed in their Transactions; and some members of the society in London, particularly the very ingenious Mr. Canton, having verified the experiment of procuring lightning from the clouds by a pointed rod, and acquainting them with the success, they soon made me more than amends for the slight with which they had before treated me. Without my having made any application for that honour, they chose me a member, and voted that I should be excus'd the customary payments, which would have amounted to twenty-five guineas; and ever since have given me their Transactions gratis. They also presented me with the gold medal of Sir Godfrey Copley for the year 1753, the delivery of which was accompanied by a very handsome speech of the president, Lord Macclesfield, wherein I was highly honoured.",
     img_url:
       "story_default.png",
     author_id:
@@ -392,31 +262,21 @@ story1 = Story.create({
       by Mr. Murdstone, on the subject of your lodgings, and he will receive
       you as a lodger.’
       
-      ‘My address,’ said Mr. Micawber, ‘is Windsor Terrace, City Road. I--in
-      short,’ said Mr. Micawber, with the same genteel air, and in another
-      burst of confidence--‘I live there.’
+      ‘My address,’ said Mr. Micawber, ‘is Windsor Terrace, City Road. I--in short,’ said Mr. Micawber, with the same genteel air, and in another burst of confidence--‘I live there.’
       
       I made him a bow.
       
-      ‘Under the impression,’ said Mr. Micawber, ‘that your peregrinations in
-      this metropolis have not as yet been extensive, and that you might have
-      some difficulty in penetrating the arcana of the Modern Babylon in the
-      direction of the City Road,--in short,’ said Mr. Micawber, in another
-      burst of confidence, ‘that you might lose yourself--I shall be happy to
-      call this evening, and install you in the knowledge of the nearest way.’
+      ‘Under the impression,’ said Mr. Micawber, ‘that your peregrinations in this metropolis have not as yet been extensive, and that you might have some difficulty in penetrating the arcana of the Modern Babylon in the direction of the City Road,--in short,’ said Mr. Micawber, in another burst of confidence, ‘that you might lose yourself--I shall be happy to call this evening, and install you in the knowledge of the nearest way.’
       
-      I thanked him with all my heart, for it was friendly in him to offer to
-      take that trouble.
+      I thanked him with all my heart, for it was friendly in him to offer to take that trouble.
       
       ‘At what hour,’ said Mr. Micawber, ‘shall I--’
       
       ‘At about eight,’ said Mr. Quinion.
       
-      ‘At about eight,’ said Mr. Micawber. ‘I beg to wish you good day, Mr.
-      Quinion. I will intrude no longer.’
+      ‘At about eight,’ said Mr. Micawber. ‘I beg to wish you good day, Mr. Quinion. I will intrude no longer.’
       
-      So he put on his hat, and went out with his cane under his arm: very
-      upright, and humming a tune when he was clear of the counting-house.",
+      So he put on his hat, and went out with his cane under his arm: very upright, and humming a tune when he was clear of the counting-house.",
     img_url:
       "story_default.png",
     author_id:
