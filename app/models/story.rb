@@ -24,13 +24,21 @@ class Story < ApplicationRecord
     foreign_key: :story_id,
     primary_key: :id
 
-  has_many :likes,
+  has_many :user_likes,
     class_name: 'Like',
     foreign_key: :story_id,
     primary_key: :id
+  
+  has_many :likers,
+    through: :user_likes,
+    source: :user
 
   def body_peek
     self.body.truncate_words(20)
+  end
+
+  def liked?(user)
+    self.likers.include?(user)
   end
 
 end
