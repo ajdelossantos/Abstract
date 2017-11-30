@@ -53,11 +53,19 @@ class CommentsForm extends React.Component {
       );
     } else {
       let { id, username, img_url } = this.props.currentUser;
-
+      console.log(this.props);
       return (
-        <div className="comments-form-container">
-          <h3 className="cf-header">Responses</h3>
-          <div className="comments-form-box">
+        <div className="comments-form-container cf-flex-parent">
+          <div className="cf-err">
+            <div classname="cf-spacer cf-flex-1">
+              &nbsp;
+              <ul className="sf-err-list">{this.renderErrors()}</ul>
+            </div>
+          </div>
+          <div className="cf-flex-2">
+            <h3 className="cf-header">Responses</h3>
+          </div>
+          <div className="comments-form-box cf-flex-3">
             <form className="comments-form-contents">
               <div className="sfb-flex-2">
                 <TextareaAutosize

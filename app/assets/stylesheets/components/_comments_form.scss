@@ -13,3 +13,19 @@
 .cf-header {
   color: $medium-dark-gray;
 }
+
+.cf-err {
+  height: 75px;
+}
+
+.cf-flex-parent {
+  display: flex;
+  flex-direction: column;
+}
+
+.cf-flex-1,
+.cf-flex-2,
+.cf-flex-3 {
+  display: flex;
+  flex: 1;
+}
