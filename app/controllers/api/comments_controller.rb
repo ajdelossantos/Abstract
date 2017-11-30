@@ -1,5 +1,5 @@
 class Api::CommentsController < ApplicationController
-  before_action :require_signed_in!
+  before_action :require_signed_in!, except: [:index]
 
   def create
     @comment = Comment.new(comment_params)
@@ -8,7 +8,7 @@ class Api::CommentsController < ApplicationController
 
     if @comment.save
       @story = @comment.story
-      render "api/stories/show"
+      render "api/comments/show"
     else
       render json: @comment.errors.full_messages, status: 422
     end
@@ -29,6 +29,6 @@ class Api::CommentsController < ApplicationController
   private 
 
   def comment_params
-    params.require(:comment).permit(:body)
+    params.require(:comment).permit(:body, :story_id)
   end
 end

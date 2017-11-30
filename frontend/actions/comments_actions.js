@@ -12,7 +12,7 @@ export const fetchStoryComments = storyId => dispatch =>
 
 export const createComment = (comment, storyId) => dispatch =>
   CommentsApiUtil.createComment(comment, storyId)
-    .then((responseComment = dispatch(receiveComment(responseComment))))
+    .then(comment => dispatch(receiveComment(comment)))
     .fail(errors => dispatch(receiveErrors(errors.responseJSON)));
 
 export const deleteComment = commentId => dispatch =>

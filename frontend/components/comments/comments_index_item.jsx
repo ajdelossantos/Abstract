@@ -15,8 +15,6 @@ class CommentsIndexItem extends React.Component {
       let { deleteComment } = this.props.deleteComment;
       let { username, img_url } = this.props.author;
 
-      console.log(this.props);
-
       return (
         <li className="comments-ii-li">
           <div className="comments-ii-box comments-ii-flex-parent">
