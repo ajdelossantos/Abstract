@@ -67,14 +67,16 @@ class CommentsForm extends React.Component {
           </div>
           <div className="comments-form-box cf-flex-3">
             <form className="comments-form-contents">
-              <div className="sfb-flex-2">
-                <TextareaAutosize
-                  id="cf-body"
-                  className="sf-body"
-                  onChange={this.update("body")}
-                  value={this.state.body}
-                  placeholder="Write a response..."
-                />
+              <div className="cf-body-container">
+                <div className="sfb-flex-2">
+                  <TextareaAutosize
+                    id="cf-body"
+                    className="sf-body"
+                    onChange={this.update("body")}
+                    value={this.state.body}
+                    placeholder="Write a response..."
+                  />
+                </div>
               </div>
               <div className="cf-input">
                 <input

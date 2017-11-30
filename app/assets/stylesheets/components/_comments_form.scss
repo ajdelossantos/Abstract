@@ -8,6 +8,7 @@
 
 .cf-input {
   display: flex;
+  flex: 1;
 }
 
 .cf-header {
@@ -28,4 +29,8 @@
 .cf-flex-3 {
   display: flex;
   flex: 1;
+}
+
+.cf-body-container {
+  min-height: 140px;
 }
