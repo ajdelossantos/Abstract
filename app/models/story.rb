@@ -24,6 +24,11 @@ class Story < ApplicationRecord
     foreign_key: :story_id,
     primary_key: :id
 
+  has_many :likes,
+    class_name: 'Like',
+    foreign_key: :story_id,
+    primary_key: :id
+
   def body_peek
     self.body.truncate_words(20)
   end
