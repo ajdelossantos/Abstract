@@ -33,7 +33,7 @@ class User < ApplicationRecord
     foreign_key: :user_id,
     primary_key: :id
 
-  has_many :liked_authored_stories,
+  has_many :liked_stories,
     through: :story_likes,
     source: :story
 

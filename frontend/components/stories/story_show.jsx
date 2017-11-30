@@ -27,6 +27,12 @@ class StoryShow extends React.Component {
     }
   }
 
+  currentUserLikes() {
+    return this.props.currentUser.likedStories.includes(
+      parseInt(this.props.match.params.storyId)
+    );
+  }
+
   render() {
     if (!this.props.story || !this.props.users) {
       return null;

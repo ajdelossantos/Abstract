@@ -2,6 +2,7 @@ import { RECEIVE_ALL_USERS, RECEIVE_USER } from "../actions/users_actions";
 import { RECEIVE_ALL_STORIES, RECEIVE_STORY } from "../actions/stories_actions";
 import merge from "lodash.merge";
 import { RECEIVE_COMMENTS } from "../actions/comments_actions";
+import { RECEIVE_LIKE } from "../actions/likes_actions";
 
 const usersReducer = (state = {}, action) => {
   Object.freeze(state);
@@ -26,6 +27,9 @@ const usersReducer = (state = {}, action) => {
       newState = merge({}, state);
       newState[action.user.id] = action.user;
       return newState;
+
+    case RECEIVE_LIKE:
+      return merge({}, state, action.payload.user);
 
     default:
       return state;

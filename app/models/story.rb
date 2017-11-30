@@ -36,9 +36,4 @@ class Story < ApplicationRecord
   def body_peek
     self.body.truncate_words(20)
   end
-
-  def liked?(user)
-    self.likers.include?(user)
-  end
-
 end

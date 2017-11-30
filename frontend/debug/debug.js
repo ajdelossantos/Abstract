@@ -17,6 +17,7 @@ import {
 } from "../actions/comments_actions";
 import merge from "lodash/merge";
 import * as Selectors from "../reducers/selectors";
+import * as LikeApiUtil from "../util/likes_util";
 
 const debugMode = store => {
   window.signupApi = SessionApiUtil.signup;
@@ -38,6 +39,9 @@ const debugMode = store => {
   window.fetchStoryComments = fetchStoryComments;
   window.createComment = createComment;
   window.deleteComment = deleteComment;
+
+  window.createLikeApi = LikeApiUtil.createLike;
+  window.deleteLikeApi = LikeApiUtil.deleteLike;
 
   window.getAllUsers = Selectors.getAllUsers;
   window.getAllStories = Selectors.getAllStories;

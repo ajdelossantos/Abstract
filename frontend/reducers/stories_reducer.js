@@ -3,6 +3,7 @@ import {
   RECEIVE_STORY,
   REMOVE_STORY
 } from "../actions/stories_actions";
+import { RECEIVE_LIKE } from "../actions/likes_actions";
 import merge from "lodash.merge";
 
 const storiesReducer = (state = {}, action) => {
@@ -22,6 +23,9 @@ const storiesReducer = (state = {}, action) => {
       newState = merge({}, state);
       delete newState[action.payload.story.id];
       return newState;
+
+    case RECEIVE_LIKE:
+      return merge({}, state, action.payload.story);
 
     default:
       return state;

@@ -6,7 +6,7 @@ class Api::LikesController < ApplicationController
     @like.user_id = current_user.id
 
     if @like.save
-      render :show
+      render "api/likes/show"
     else
       render json: @like.errors.full_messages, status: 422
     end
@@ -17,14 +17,16 @@ class Api::LikesController < ApplicationController
   end
 
   def destroy
+
+    debugger;
     @like = Like.find_by(
       user_id: current_user.id,
       story_id: params[:story_id]
     )
 
-    if @like.user_id == current_user.is
+    if @like && @like.user_id == current_user.id
       @like.destroy
-      render :show
+      render "api/likes/show"
     else
       render json: ["If you've found this, something is very wrong"], status: 422
     end
