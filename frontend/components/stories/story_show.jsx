@@ -14,7 +14,7 @@ class StoryShow extends React.Component {
 
   componentDidMount() {
     let storyId = this.props.match.params.storyId;
-    this.props.fetchStory(storyId);
+    this.props.fetchStory(storyId).then(window.scrollTo(0, 0));
   }
 
   displayControl() {
@@ -72,6 +72,7 @@ class StoryShow extends React.Component {
                   currentUser={this.props.currentUser}
                   displayControl={this.displayControl()}
                   authorId={author_id}
+                  history={this.props.history}
                 />
               </div>
             </div>

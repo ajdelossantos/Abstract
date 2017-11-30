@@ -8,7 +8,7 @@ class StoryIndex extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchStories();
+    this.props.fetchStories().then(window.scrollTo(0, 0));
   }
 
   assignAuthor(story) {
@@ -34,6 +34,7 @@ class StoryIndex extends React.Component {
               deleteStory={() => {}}
               displayControl={false}
               currentUser={this.props.currentUser}
+              history={this.props.history}
             />
           ))}
         </ul>

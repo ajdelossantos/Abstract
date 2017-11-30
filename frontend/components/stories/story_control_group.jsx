@@ -6,7 +6,8 @@ export const StoryControlGroup = ({
   deleteStory,
   currentUser,
   displayControl,
-  authorId
+  authorId,
+  history
 }) => {
   if (!displayControl || !currentUser) {
     return null;
@@ -22,7 +23,11 @@ export const StoryControlGroup = ({
         </div>
         <div className="sc-flex-child">
           <button
-            onClick={() => deleteStory(storyId)}
+            onClick={() =>
+              deleteStory(storyId).then(
+                history.push(`/users/${currentUser.id}`)
+              )
+            }
             className="btn-reset sc-link sc-link-delete"
           >
             Delete Story

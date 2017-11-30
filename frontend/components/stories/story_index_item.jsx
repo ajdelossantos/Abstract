@@ -74,6 +74,7 @@ class StoryIndexItem extends React.Component {
                   displayControl={this.props.displayControl}
                   currentUser={this.props.currentUser}
                   authorId={author_id}
+                  history={this.props.history}
                 />
               </div>
             </div>

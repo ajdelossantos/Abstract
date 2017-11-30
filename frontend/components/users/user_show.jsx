@@ -53,6 +53,7 @@ class UserShow extends React.Component {
                   deleteStory={this.props.deleteStory}
                   displayControl={true}
                   currentUser={this.props.currentUser}
+                  history={this.props.history}
                 />
               ))}
             </ul>
