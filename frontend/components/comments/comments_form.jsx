@@ -57,7 +57,7 @@ class CommentsForm extends React.Component {
       return (
         <div className="comments-form-container cf-flex-parent">
           <div className="cf-err">
-            <div classname="cf-spacer cf-flex-1">
+            <div className="cf-spacer cf-flex-1">
               &nbsp;
               <ul className="sf-err-list">{this.renderErrors()}</ul>
             </div>
