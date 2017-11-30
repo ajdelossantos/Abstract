@@ -1,0 +1,26 @@
+.likes-ctr-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid $medium-green;
+  color: $medium-green;
+  border-radius: 2px;
+  background-color: $bright-white;
+  max-width: 40px;
+  padding: 2px 0;
+  margin-left: 230px;
+  margin-top: 4px;
+
+  align-self: flex-end;
+}
+
+.like-ctr-i,
+.like-ctr-num {
+  display: flex;
+  flex: 1;
+  padding: 0 2px;
+}
+
+.like-ctr-i {
+  padding-left: 5px;
+}

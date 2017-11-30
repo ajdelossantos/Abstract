@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import { StoryControlGroup } from "./story_control_group";
+import { LikesCounter } from "../likes/likes_counter";
 
 class StoryIndexItem extends React.Component {
   constructor(props) {
@@ -14,7 +15,8 @@ class StoryIndexItem extends React.Component {
       body_peek,
       img_url,
       author_id,
-      updated_at
+      updated_at,
+      likesCount
     } = this.props.story;
 
     if (!this.props.author) {
@@ -30,16 +32,21 @@ class StoryIndexItem extends React.Component {
         <li className="story-index-item">
           <div className="story-index-item-container-1">
             <div className="story-index-item-image-1 story-index-item-flex-1">
-              <Link to={`/stories/${id}`} className="placeholder-txt">
+              <Link to={`/stories/${id}`} className="img-link">
                 <img src={img_url} alt="" />
               </Link>
             </div>
 
             <div className="story-index-item-flex-2">
               <div className="story-index-item-header-1">
-                <h2 className="sii-title">
-                  <Link to={`/stories/${id}`}>{title}</Link>
-                </h2>
+                <div className="sii-header-flex-1">
+                  <h2 className="sii-title">
+                    <Link to={`/stories/${id}`}>{title}</Link>
+                  </h2>
+                </div>
+                <div className="sii-header-flex-2">
+                  <LikesCounter likesCount={likesCount} />
+                </div>
               </div>
 
               <div className="sii-spacer">&nbsp;</div>
