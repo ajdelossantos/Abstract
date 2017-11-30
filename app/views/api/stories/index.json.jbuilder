@@ -8,6 +8,8 @@ json.stories do
       json.author_id story.author_id
       json.commentIds story.comments.pluck(:id)
       json.updated_at story.updated_at.strftime("%b %d, %Y")
+      json.likesCount story.user_likes.count
+      json.currentUserLikes story.liked(current_user)
     end
   end
 end
