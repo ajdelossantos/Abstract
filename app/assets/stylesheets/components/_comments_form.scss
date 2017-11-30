@@ -1,0 +1,15 @@
+#cf-body {
+  max-width: 575px;
+  min-height: 40px;
+  background-color: #fff;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.cf-input {
+  display: flex;
+}
+
+.cf-header {
+  color: $medium-dark-gray;
+}

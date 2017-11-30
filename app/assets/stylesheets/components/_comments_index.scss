@@ -1,9 +1,17 @@
-.comments-index-container {
+.comments-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comments-index-container,
+.comments-form-container {
   max-width: 640px;
   width: 100%;
 }
 
-.comments-ii-box {
+.comments-ii-box,
+.comments-form-box {
   box-sizing: border-box;
   padding-top: 10px;
   padding-right: 20px;

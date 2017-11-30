@@ -55,35 +55,29 @@ class CommentsForm extends React.Component {
       let { id, username, img_url } = this.props.currentUser;
 
       return (
-        <div className="comments-form-box">
-          <form className="comments-form-contents">
-            <h2>CommentsForm placeholder text</h2>
-            <div className="sfb-flex-2">
-              <TextareaAutosize
-                id="sf-body"
-                className="sf-body"
-                onChange={this.update("body")}
-                value={this.state.body}
-                placeholder="Write a response..."
-              />
-              <label htmlFor="sf-body" className="sf-label">
-                <UserDetailsGroup
-                  id={id}
-                  username={username}
-                  imgUrl={img_url}
-                  date="&nbsp;"
+        <div className="comments-form-container">
+          <h3 className="cf-header">Responses</h3>
+          <div className="comments-form-box">
+            <form className="comments-form-contents">
+              <div className="sfb-flex-2">
+                <TextareaAutosize
+                  id="cf-body"
+                  className="sf-body"
+                  onChange={this.update("body")}
+                  value={this.state.body}
+                  placeholder="Write a response..."
                 />
-              </label>
-            </div>
-            <div className="cf-input">
-              <input
-                type="submit"
-                value="Publish"
-                onClick={this.handleSubmit}
-                className="btn-reset input-btn-1 sf-submit-btn"
-              />
-            </div>
-          </form>
+              </div>
+              <div className="cf-input">
+                <input
+                  type="submit"
+                  value="Publish"
+                  onClick={this.handleSubmit}
+                  className="btn-reset input-btn-1"
+                />
+              </div>
+            </form>
+          </div>
         </div>
       );
     }

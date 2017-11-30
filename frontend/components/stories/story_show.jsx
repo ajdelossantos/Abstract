@@ -47,36 +47,39 @@ class StoryShow extends React.Component {
       }
 
       return (
-        <div className="article-flex-container">
-          <div className="article-flex-child follows-container">
-            <FollowsContainer
-              user={this.props.users[author_id]}
-              updated_at={updated_at}
-            />
-          </div>
-          <div className="article-header article-flex-child">
-            <div className="article-title">
-              <h2 className="title">{title}</h2>
-            </div>
-            <div className="article-control-group">
-              <StoryControlGroup
-                storyId={id}
-                deleteStory={this.props.deleteStory}
-                currentUser={this.props.currentUser}
-                displayControl={this.displayControl()}
-                authorId={author_id}
+        <div>
+          <div className="article-flex-container">
+            <div className="article-flex-child follows-container">
+              <FollowsContainer
+                user={this.props.users[author_id]}
+                updated_at={updated_at}
               />
             </div>
+            <div className="article-header article-flex-child">
+              <div className="article-title">
+                <h2 className="title">{title}</h2>
+              </div>
+              <div className="article-control-group">
+                <StoryControlGroup
+                  storyId={id}
+                  deleteStory={this.props.deleteStory}
+                  currentUser={this.props.currentUser}
+                  displayControl={this.displayControl()}
+                  authorId={author_id}
+                />
+              </div>
+            </div>
+            <div className="article-img article-flex-child">
+              <img src={img_url} />
+            </div>
+            <div className="article-text-container article-flex-child">
+              <pre className="article-text">{body}</pre>
+            </div>
           </div>
-          <div className="article-img article-flex-child">
-            <img src={img_url} />
+          <div className="off-white comments-container">
+            <CommentsFormContainer />
+            <CommentsIndexContainer />
           </div>
-          <div className="article-text-container article-flex-child">
-            <pre className="article-text">{body}</pre>
-          </div>
-          <CommentsFormContainer />
-          <CommentsIndexContainer />
-          <br />
         </div>
       );
     }
