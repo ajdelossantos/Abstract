@@ -1,0 +1,15 @@
+.loading-screen {
+  margin: 0 auto;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $lightest-gray;
+}
+
+#loading-txt {
+  color: $medium-green;
+  font-style: italic;
+  font-weight: 700;
+}

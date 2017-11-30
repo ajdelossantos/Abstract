@@ -1,5 +1,6 @@
 import React from "react";
 import CommentsIndexItem from "./comments_index_item";
+import { Loading } from "../ui/loading";
 
 class CommentsIndex extends React.Component {
   constructor(props) {
@@ -20,7 +21,7 @@ class CommentsIndex extends React.Component {
 
   render() {
     if (!this.props.comments) {
-      return null;
+      return <Loading />;
     } else {
       return (
         <div className="comments-index-container">

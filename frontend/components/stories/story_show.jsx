@@ -4,6 +4,7 @@ import { StoryControlGroup } from "./story_control_group";
 import FollowsContainer from "../follows/follows_container";
 import CommentsFormContainer from "../comments/comments_form_container";
 import CommentsIndexContainer from "../comments/comments_index_container";
+import { Loading } from "../ui/loading";
 
 class StoryShow extends React.Component {
   constructor(props) {
@@ -35,7 +36,7 @@ class StoryShow extends React.Component {
 
   render() {
     if (!this.props.story || !this.props.users) {
-      return null;
+      return <Loading />;
     } else {
       let {
         id,

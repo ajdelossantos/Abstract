@@ -1,5 +1,6 @@
 import React from "react";
 import StoryIndexItem from "./story_index_item";
+import { Loading } from "../ui/loading";
 
 class StoryIndex extends React.Component {
   constructor(props) {
@@ -17,29 +18,33 @@ class StoryIndex extends React.Component {
   }
 
   render() {
-    return (
-      <div>
-        <header className="main-header-container">
-          <div className="main-header-flex-1">
-            <h2 className="title">Welcome Home!</h2>
-          </div>
-          <div className="main-header-flex-2">&nbsp;</div>
-        </header>
-        <ul className="story-index-list">
-          {this.props.stories.map(story => (
-            <StoryIndexItem
-              key={`story-index-${story.id}`}
-              story={story}
-              author={this.assignAuthor(story)}
-              deleteStory={() => {}}
-              displayControl={false}
-              currentUser={this.props.currentUser}
-              history={this.props.history}
-            />
-          ))}
-        </ul>
-      </div>
-    );
+    if (!this.props.stories) {
+      return <Loading />;
+    } else {
+      return (
+        <div>
+          <header className="main-header-container">
+            <div className="main-header-flex-1">
+              <h2 className="title">Welcome Home!</h2>
+            </div>
+            <div className="main-header-flex-2">&nbsp;</div>
+          </header>
+          <ul className="story-index-list">
+            {this.props.stories.map(story => (
+              <StoryIndexItem
+                key={`story-index-${story.id}`}
+                story={story}
+                author={this.assignAuthor(story)}
+                deleteStory={() => {}}
+                displayControl={false}
+                currentUser={this.props.currentUser}
+                history={this.props.history}
+              />
+            ))}
+          </ul>
+        </div>
+      );
+    }
   }
 }
 
