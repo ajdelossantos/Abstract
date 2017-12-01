@@ -59,3 +59,9 @@ const debugMode = store => {
 //======================================================================
 
 export default debugMode;
+
+// TODO put at top of Abstract.jsx to debug
+import debugMode from "./debug/debug";
+
+// TODO put in document.addEventListener to debug
+debugMode(store);
