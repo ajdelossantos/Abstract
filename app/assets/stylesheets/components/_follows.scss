@@ -1,10 +1,10 @@
-.follow-btn-container {
+.toggle-btn-container {
   display: flex;
   flex: 1;
   margin-left: 5px;
 }
 
-.follow-btn {
+.toggle-btn {
   border: 1px solid $medium-green;
   border-radius: 5px;
   margin-right: 5px;
@@ -14,7 +14,7 @@
   font-weight: 300;
 }
 
-.follow-btn:hover {
+.toggle-btn:hover {
   color: #fff;
   border-color: $medium-green;
   background-color: $medium-green;

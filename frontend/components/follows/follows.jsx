@@ -24,8 +24,8 @@ class Follows extends React.Component {
               <Link to={`/users/${id}`} className="user-link">
                 {username}
               </Link>
-              <div className="follow-btn-container">
-                <span href="" className="follow-btn">
+              <div className="toggle-btn-container">
+                <span href="" className="toggle-btn">
                   Follow
                 </span>
               </div>

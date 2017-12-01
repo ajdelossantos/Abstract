@@ -29,11 +29,11 @@ class StoryShow extends React.Component {
     }
   }
 
-  currentUserLikes() {
-    return this.props.currentUser.likedStories.includes(
-      parseInt(this.props.match.params.storyId)
-    );
-  }
+  // currentUserLikes() {
+  //   return this.props.currentUser.likedStories.includes(
+  //     parseInt(this.props.match.params.storyId)
+  //   );
+  // }
 
   render() {
     if (!this.props.story || !this.props.users) {
@@ -81,11 +81,11 @@ class StoryShow extends React.Component {
             <div className="article-img article-flex-child">
               <img src={img_url} />
             </div>
-            <LikesFormContainer />
+            <LikesFormContainer display={"start"} />
             <div className="article-text-container article-flex-child">
               <pre className="article-text">{body}</pre>
             </div>
-            <LikesFormContainer />
+            <LikesFormContainer display={"end"} />
           </div>
           <div className="off-white comments-container">
             <CommentsFormContainer />
