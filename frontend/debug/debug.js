@@ -15,9 +15,11 @@ import {
   createComment,
   deleteComment
 } from "../actions/comments_actions";
-import merge from "lodash/merge";
+import { createFollow, deleteFollow } from "../actions/follows_actions";
 import * as Selectors from "../reducers/selectors";
-import * as LikeApiUtil from "../util/likes_util";
+import * as LikeApiUtil from "../util/likes_api_util";
+
+import merge from "lodash/merge";
 
 const debugMode = store => {
   window.signupApi = SessionApiUtil.signup;
@@ -42,6 +44,9 @@ const debugMode = store => {
 
   window.createLikeApi = LikeApiUtil.createLike;
   window.deleteLikeApi = LikeApiUtil.deleteLike;
+
+  window.createFollow = createFollow;
+  window.deleteFollow = deleteFollow;
 
   window.getAllUsers = Selectors.getAllUsers;
   window.getAllStories = Selectors.getAllStories;

@@ -44,7 +44,7 @@ class User < ApplicationRecord
 
   has_many :followees,
     through: :following,
-    source: :followees
+    source: :followee
 
   has_many :follows,
     class_name: 'Follow',

@@ -1,4 +1,4 @@
-import * as LikeApiUtil from "../util/likes_util";
+import * as LikeApiUtil from "../util/likes_api_util";
 import { receiveErrors } from "./errors_actions";
 
 export const RECEIVE_LIKE = "RECEIVE_LIKE";
