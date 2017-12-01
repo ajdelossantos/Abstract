@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 class LikesForm extends React.Component {
   constructor(props) {
     super(props);
+
+    this.currentUserLikes = this.currentUserLikes.bind(this);
   }
 
   currentUserLikes() {
@@ -22,8 +24,6 @@ class LikesForm extends React.Component {
   }
 
   render() {
-    console.log(this.props);
-
     let header;
     let body;
 
@@ -33,6 +33,14 @@ class LikesForm extends React.Component {
     } else {
       header = "Did this story speak to you?";
       body = "Give it a like, and share your thoughts below.";
+    }
+
+    let btnClass = "btn-reset input-btn-1";
+    let btnText = "Like?";
+
+    if (this.currentUserLikes()) {
+      btnClass = "btn-reset input-btn-1 btn-toggled";
+      btnText = "Liked";
     }
 
     return (
@@ -47,7 +55,7 @@ class LikesForm extends React.Component {
           </div>
           <div className="lf-flex-3">
             <div className="lf-btn-container">
-              <button className="btn-reset input-btn-1">Like?</button>
+              <button className={btnClass}>{btnText}</button>
             </div>
             <LikesCounterXl likesCount={this.props.story.likesCount} />
           </div>
