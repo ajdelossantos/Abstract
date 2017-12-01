@@ -1,6 +1,12 @@
 # Abstract
 
-[Abstract](http://abstract-io.herokuapp.com/#/)
+## [Abstract](http://abstract-io.herokuapp.com/#/)
+
+<br><br>
+
+![Sample Welcome Page](https://raw.githubusercontent.com/ajdelossantos/Abstract/master/docs/wireframes/welcome.png)
+
+<br><br>
 
 _**Abstract**_ is a social media application, based off of Medium. It allows
 users to post their stories to share with the world, it lets users interact with
@@ -8,8 +14,8 @@ other users by following them, and it lets users interact with other user's
 stories by liking them and allowing comments about them.
 
 It is a single page application built on a PostgreSQL database, a Ruby on Rails
-backend, and a React-Redux frontend framework supporting the JavaScript and
-HTML/CSS.
+backend, and a React-Redux framework supporting the JavaScript and HTML/CSS
+frontend.
 
 <br><br>
 
@@ -117,9 +123,9 @@ export const UserDetailsGroup = ({ id, username, imgUrl, date }) => (
 
 ## Forms
 
-A minimal approach to forms keeps user focus on writing and reading content. By
-design, minimal formatting options in the story create/edit forms render a
-typewriter-inspired writing experience in both display and typography.
+A minimalistic approach to forms keeps the user focus on writing and reading
+content. By design, spare formatting options in the story create/edit forms
+render a typewriter-inspired writing experience in both display and typography.
 
 ![StoryForm](https://raw.githubusercontent.com/ajdelossantos/Abstract/master/docs/documentation/story-form.png)
 
@@ -130,11 +136,10 @@ textarea component is integrated into both the comment and story forms.
 
 ## Authentication
 
-BCrypt salts users' passwords and stores their credentials as unique hashes for
-security. The `session_token` persists with the user and allows unrestricted
-access to _Abstract_ and its features. Implemented "Auth" and "Protected" routes
-in addition to conditional rendering logic in React restrict visitors
-interaction without sacrificing the user reading experience.
+BCrypt and a persistent `session_token` allow secure user authentication.
+Implemented "Auth" and "Protected" routes in addition to conditional rendering
+logic in React restrict visitors interaction without sacrificing the user
+reading experience.
 
 <br><br>
 
