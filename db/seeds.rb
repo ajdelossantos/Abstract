@@ -684,7 +684,8 @@ follow06 = Follow.create({ followee_id: user2.id, follower_id: user7.id })
 follow07 = Follow.create({ followee_id: user2.id, follower_id: user8.id })
 follow08 = Follow.create({ followee_id: user2.id, follower_id: user9.id })
 follow09 = Follow.create({ followee_id: user2.id, follower_id: user10.id })
-follow10 = Follow.create({ followee_id: user4.id, follower_id: user10.id })Comment.create!([
+follow10 = Follow.create({ followee_id: user4.id, follower_id: user10.id })
+Comment.create!([
   {body: "You were always a bit bull-headed, Teddy. I'm really quite ashamed.", story_id: 263, author_id: 179},
   {body: "Young man, you have much to learn!", story_id: 252, author_id: 179},
   {body: "Ben, any good choices for a pseudonym? I've thought of writing romantic comedies.\n\nNot.", story_id: 250, author_id: 179},
