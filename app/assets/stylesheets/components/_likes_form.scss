@@ -71,3 +71,21 @@
 .lf-txt {
   font-size: 16px;
 }
+
+.lf-alt-txt {
+  padding-right: 20px;
+  font-size: 16px;
+}
+
+.lf-alt-txt:hover {
+  color: $medium-green;
+  cursor: pointer;
+}
+
+.input-btn-1:focus {
+  outline: none;
+}
+
+#like-btn {
+  width: 80px;
+}

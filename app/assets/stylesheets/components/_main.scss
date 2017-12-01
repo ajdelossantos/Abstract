@@ -78,3 +78,14 @@ body {
   padding-bottom: 20px;
   margin-bottom: 40px;
 }
+
+.btn-toggled {
+  background-color: $medium-green;
+  border-color: $medium-green;
+  color: $off-white;
+}
+
+.btn-toggled:hover {
+  color: $off-white;
+  border-color: $off-white;
+}

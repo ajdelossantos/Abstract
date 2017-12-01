@@ -123,6 +123,7 @@ class StoryForm extends React.Component {
                 <label htmlFor="sf-title">&nbsp;</label>
                 <TextareaAutosize
                   className="sf-body"
+                  id="sf-body"
                   onChange={this.update("body")}
                   value={this.state.body}
                   placeholder="Tell your story..."

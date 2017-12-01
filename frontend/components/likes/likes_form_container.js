@@ -14,8 +14,8 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    createLike: like => dispatch(createLike(like)),
-    deleteLike: like => dispatch(deleteLike(like)),
+    createLike: storyId => dispatch(createLike(storyId)),
+    deleteLike: storyId => dispatch(deleteLike(storyId)),
     clearErrors: errors => dispatch(clearErrors(errors))
   };
 };
