@@ -1,0 +1,21 @@
+.likes-form-container {
+  box-sizing: border-box;
+  border: 1px dashed red;
+  border-top: 1px solid $light-gray;
+  border-bottom: 1px solid $light-gray;
+  background: #f0f0f0;
+  height: 200px;
+  max-width: 740px;
+  padding: 0 20px;
+  display: flex;
+}
+
+.lf-contents {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.lf-spacer {
+  min-width: 700px;
+}

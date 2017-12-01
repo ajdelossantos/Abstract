@@ -17,8 +17,6 @@ class Api::LikesController < ApplicationController
   end
 
   def destroy
-
-    debugger;
     @like = Like.find_by(
       user_id: current_user.id,
       story_id: params[:story_id]

@@ -53,7 +53,6 @@ class CommentsForm extends React.Component {
       );
     } else {
       let { id, username, img_url } = this.props.currentUser;
-      console.log(this.props);
       return (
         <div className="comments-form-container cf-flex-parent">
           <div className="cf-err">

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import StoryIndexItem from "../stories/story_index_item";
 import FollowsContainer from "../follows/follows_container";
 import { StoryCreateLink } from "../stories/story_create_link";
+import { Loading } from "../ui/loading";
 
 class UserShow extends React.Component {
   constructor(props) {
@@ -20,7 +21,7 @@ class UserShow extends React.Component {
 
   render() {
     if (!this.props.user || !this.props.stories) {
-      return null;
+      return <Loading />;
     } else {
       let { username } = this.props.user;
       let userId = parseInt(this.props.match.params.userId);

@@ -5,6 +5,7 @@ import FollowsContainer from "../follows/follows_container";
 import CommentsFormContainer from "../comments/comments_form_container";
 import CommentsIndexContainer from "../comments/comments_index_container";
 import { Loading } from "../ui/loading";
+import LikesFormContainer from "../likes/likes_form_container";
 
 class StoryShow extends React.Component {
   constructor(props) {
@@ -80,9 +81,11 @@ class StoryShow extends React.Component {
             <div className="article-img article-flex-child">
               <img src={img_url} />
             </div>
+            <LikesFormContainer />
             <div className="article-text-container article-flex-child">
               <pre className="article-text">{body}</pre>
             </div>
+            <LikesFormContainer />
           </div>
           <div className="off-white comments-container">
             <CommentsFormContainer />
