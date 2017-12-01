@@ -1,2 +1,13 @@
-<h1>Api::Follows#show</h1>
-<p>Find me in app/views/api/follows/show.html.erb</p>
+# User the Current User will follow
+json.set! :followee do
+  json.set! @follow.followee do
+    json.partial! "api/users/user", user: @follow.followee
+  end
+end
+
+# Current User
+json.set! :follower do
+  json.set! @follow.follower do
+    json.partial! "api/users/user", user: @follow.follower
+  end
+end
