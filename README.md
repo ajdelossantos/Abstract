@@ -40,7 +40,7 @@ the database, stories are stored with the following attributes: `title`, `body`,
 
 <br>
 
-![StoryIndexItem Image Placeholder]()
+![StoryIndexItem Image Placeholder](https://raw.githubusercontent.com/ajdelossantos/Abstract/master/docs/documentation/sii-cards.png)
 
 <br>
 
