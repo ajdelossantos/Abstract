@@ -32,6 +32,7 @@ gem 'normalize-scss'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'font-awesome-sass', '~> 4.7.0'
+gem 'seed_dump'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
