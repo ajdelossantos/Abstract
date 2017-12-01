@@ -26,7 +26,7 @@ class Api::LikesController < ApplicationController
       @like.destroy
       render "api/likes/show"
     else
-      render json: ["If you've found this, something is very wrong"], status: 422
+      render json: ["This like is not valid"], status: 422
     end
   end
 
