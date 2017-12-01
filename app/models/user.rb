@@ -37,6 +37,24 @@ class User < ApplicationRecord
     through: :story_likes,
     source: :story
 
+  has_many :following,
+    class_name: 'Follow'
+    foreign_key: :follower_id,
+    primary_id: :id
+
+  has_many :followees,
+    through: :following,
+    source: :followees
+
+  has_many :follows,
+    class_name: 'Follow',
+    foreign_key: :followee_id,
+    primary_key: :id
+
+  has_many :followers,
+    through: :follows,
+    source: :follower
+
   def self.find_by_credentials(username, password)
     user = User.find_by(username: username)
     user && user.is_password?(password) ? user : nil
