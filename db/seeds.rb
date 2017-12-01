@@ -1,9 +1,3 @@
-User.destroy_all
-Story.destroy_all
-Comment.destroy_all
-Like.destroy_all
-Follow.destroy_all
-
 Comment.create!([
   {body: "You were always a bit bull-headed, Teddy. I'm really quite ashamed.", story_id: 263, author_id: 179},
   {body: "Young man, you have much to learn!", story_id: 252, author_id: 179},
