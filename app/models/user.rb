@@ -38,9 +38,9 @@ class User < ApplicationRecord
     source: :story
 
   has_many :following,
-    class_name: 'Follow'
+    class_name: 'Follow',
     foreign_key: :follower_id,
-    primary_id: :id
+    primary_key: :id
 
   has_many :followees,
     through: :following,
