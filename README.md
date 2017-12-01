@@ -67,7 +67,7 @@ page as well as on their stories, for example.
 
 [*_Image Placeholder_*]
 
-```js
+```javascript
 // user_details_group.js
 
 // Avatar image upload will be supported in future releases
@@ -103,27 +103,88 @@ export const UserDetailsGroup = ({ id, username, imgUrl, date }) => (
 
 A minimal approach to forms keeps user focus on writing and reading content. By
 design, minimal formatting options in the story create/edit forms render a
-typewriter-inspired writing experience.
+typewriter-inspired writing experience in both display and typography.
 
-### Getting Started/Requirements/Prerequisites/Dependencies
+[*_Image Placeholder_*]
 
-### Contributing
+React allows access to a large library of components; an automatically-expanding
+textarea component is integrated into both the comment and story forms.
 
-* Contributor Guidelines
-* Code Style/Requirements
-* Format for commit messages
-* Thank you (name contributors)
+[_*Image Placeholder*_][*_code placeholder_*]
 
-### TODO
+## Authentication
 
-* Next steps
+BCrypt salts users' passwords and stores their credentials as unique hashes for
+security. The `session_token` persists with the user and allows unrestricted
+access to _Abstract_ and its features. Implemented "Auth" and "Protected" routes
+in addition to conditional rendering logic in React restrict visitors
+interaction without sacrificing the user reading experience.
+
+[_*Image Placeholder*_]
+
+```javascript
+// story_control_group.jsx
+// StoryIndexItem passes in currentUser and displayControl as props
+export const StoryControlGroup = ({
+  ...
+  displayControl, //boolean
+  currentUser,
+  ...
+}) => {
+  if (!displayControl || !currentUser) {
+    return null;
+  } else if (currentUser.id !== authorId) {
+    return null;
+  } else {
+    return (
+      <div className="story-control-group">
+        ...
+      </div>
+    );
+  }
+};
+```
+
+[_*Image Placeholder*_]
+
+## Technologies and Concept
+
+Ruby on Rails enables RESTful API support and powerful relational database
+capabilities capable of building this website over a timeframe of ten days.
+Given that timeline, Heroku suits _Abstract's_ needs.
+
+React was chosen for its responsiveness and modularity to ensure smooth,
+consistent user experience throughout the site. The Redux library offers an
+effective global-state-management solution and was chosen in consideration of
+these features:
+
+> * Pre-fill state on the server, send it to the client in HTML, and boot up
+>   from it, out of the box.
+> * Pass action objects over the network to implement collaborative environments
+>   without dramatic changes to how the code is written.
+> * Maintain an undo history or implement optimistic mutations without dramatic
+>   changes to how the code is written.
+> * Provide alternative UIs while reusing most of the business logic.
+>
+> -- <cite>Dan Abramov, creator of Redux. Medium, September 19, 2016</cite>
+
+### Moving Forward
+
 * Features planned
-* Known bugs (shortlist)
+
+  * Rich text editing
+  * Additional Feed Index Cards styles and groupings
+
+  ![](https://github.com/ajdelossantos/Abstract/blob/master/docs/wireframes/story-index-feed.png)
+
+  * Image upload and preview
+  * User profile and information customization
+
+This project will serve as inspiration, testbed, and codebase for my future blog
+platform. Stay-tuned!
 
 ### Contact
 
-* Email address
-* Google Group/mailing list (if applicable)
-* IRC or Slack (if applicable)
+Alvin James T. Delos Santos
 
-### License
+* a.jamesdelossantos@gmail.com
