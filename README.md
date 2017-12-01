@@ -32,6 +32,10 @@ frontend.
   * Users may create and delete comments on other user's stories
 * _Want to see what others are reading_?
   * Users may like a story, and stories show how many users have liked it
+
+<br>
+
+* _Future Release Pending_
 * _Want to curate what you're reading?_
   * Users may follow a fellow author to see their stories on their private feed.
     Users can also track how many readers are following them.
