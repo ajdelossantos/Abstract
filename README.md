@@ -11,6 +11,8 @@ It is a single page application built on a PostgreSQL database, a Ruby on Rails
 backend, and a React-Redux frontend framework supporting the JavaScript and
 HTML/CSS.
 
+<br><br>
+
 # Features
 
 * Secure sign in and sign up provided by BCrypt password encryption. Session
@@ -36,12 +38,18 @@ Stories are the first thing a user interacts with on Abstract's main feed. In
 the database, stories are stored with the following attributes: `title`, `body`,
 `img_url`, `author_id`, `created_at / updated_at`.
 
-[*_Image Placeholder_*]
+<br>
+
+![StoryIndexItem Image Placeholder]()
+
+<br>
 
 The 'index card' above succinctly packages all of this information in a
 conscise, minimal format and encapsulates all the features of the website. Rails
 offers very useful utility methods to transform the data before it arrives on
 the frontend:
+
+<br>
 
 ```ruby
 #====================
@@ -61,11 +69,17 @@ the frontend:
   # Fri, 01 Dec 2017 08:24:44 UTC +00:00 => "Dec 01, 2017"
 ```
 
+<br><br>
+
 React enables modularity of HTML components that ensure a consistent user
 experience throughout the website. User details are featured on a user's profile
 page as well as on their stories, for example.
 
-[*_Image Placeholder_*]
+<br><br>
+
+![UserDetailsCluster](https://raw.githubusercontent.com/ajdelossantos/Abstract/master/docs/documentation/user-details.png)
+
+<br><br>
 
 ```javascript
 // user_details_group.js
@@ -99,18 +113,20 @@ export const UserDetailsGroup = ({ id, username, imgUrl, date }) => (
 );
 ```
 
+<br><br>
+
 ## Forms
 
 A minimal approach to forms keeps user focus on writing and reading content. By
 design, minimal formatting options in the story create/edit forms render a
 typewriter-inspired writing experience in both display and typography.
 
-![StoryForm(https://raw.githubusercontent.com/ajdelossantos/Abstract/master/docs/documentation/story-form.png)
+![StoryForm](https://raw.githubusercontent.com/ajdelossantos/Abstract/master/docs/documentation/story-form.png)
 
 React allows access to a large library of components; an automatically-expanding
 textarea component is integrated into both the comment and story forms.
 
-[_*Image Placeholder*_][*_code placeholder_*]
+<br><br>
 
 ## Authentication
 
@@ -120,7 +136,15 @@ access to _Abstract_ and its features. Implemented "Auth" and "Protected" routes
 in addition to conditional rendering logic in React restrict visitors
 interaction without sacrificing the user reading experience.
 
+<br><br>
+
+### Before
+
 ![StoryControlOff](https://raw.githubusercontent.com/ajdelossantos/Abstract/master/docs/documentation/control-off.png)
+
+<br><br>
+
+### Conditional Logic
 
 ```javascript
 // story_control_group.jsx
@@ -145,7 +169,13 @@ export const StoryControlGroup = ({
 };
 ```
 
+<br><br>
+
+### After
+
 ![StoryControlOff](https://raw.githubusercontent.com/ajdelossantos/Abstract/master/docs/documentation/control-on.png)
+
+<br><br>
 
 ## Technologies and Concept
 
@@ -168,22 +198,26 @@ these features:
 >
 > -- <cite>Dan Abramov, creator of Redux. Medium, September 19, 2016</cite>
 
-### Moving Forward
+<br><br>
+
+## Moving Forward
 
 * Features planned
 
   * Rich text editing
   * Additional Feed Index Cards styles and groupings
 
-  ![](https://github.com/ajdelossantos/Abstract/blob/master/docs/wireframes/story-index-feed.png)
+![Wireframe](https://raw.githubusercontent.com/ajdelossantos/Abstract/master/docs/wireframes/story-index-feed.png)
 
-  * Image upload and preview
-  * User profile and information customization
+* Image upload and preview
+* User profile and information customization
 
 This project will serve as inspiration, testbed, and codebase for my future blog
 platform. Stay-tuned!
 
-### Contact
+<br>
+
+## Contact
 
 Alvin James T. Delos Santos
 
