@@ -15,7 +15,7 @@ HTML/CSS.
 
 * Secure sign in and sign up provided by BCrypt password encryption. Session
   tokens persist to keep users signed in at will
-* A clean, simple interface exphasizes the author/reader relationship and offer
+* A clean, simple interface emphasizes the author/reader relationship and offer
   a focused and clear writing/reading experience
 * _Stories come first_
   * Users may view (index/feed and show), create, edit, and delete stories
@@ -105,7 +105,7 @@ A minimal approach to forms keeps user focus on writing and reading content. By
 design, minimal formatting options in the story create/edit forms render a
 typewriter-inspired writing experience in both display and typography.
 
-[*_Image Placeholder_*]
+![StoryForm(https://raw.githubusercontent.com/ajdelossantos/Abstract/master/docs/documentation/story-form.png)
 
 React allows access to a large library of components; an automatically-expanding
 textarea component is integrated into both the comment and story forms.
@@ -120,7 +120,7 @@ access to _Abstract_ and its features. Implemented "Auth" and "Protected" routes
 in addition to conditional rendering logic in React restrict visitors
 interaction without sacrificing the user reading experience.
 
-[_*Image Placeholder*_]
+![StoryControlOff](https://raw.githubusercontent.com/ajdelossantos/Abstract/master/docs/documentation/control-off.png)
 
 ```javascript
 // story_control_group.jsx
@@ -145,7 +145,7 @@ export const StoryControlGroup = ({
 };
 ```
 
-[_*Image Placeholder*_]
+![StoryControlOff](https://raw.githubusercontent.com/ajdelossantos/Abstract/master/docs/documentation/control-on.png)
 
 ## Technologies and Concept
 
