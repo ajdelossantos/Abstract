@@ -17,7 +17,7 @@ const App = () => (
     <header className="header">
       <div className="header-container">
         <div className="header-flex-0 header-about">
-          <a href="#">About Abstract</a>
+          <a href="https://github.com/ajdelossantos/Abstract">About Abstract</a>
         </div>
 
         <div className="header-flex-1">
