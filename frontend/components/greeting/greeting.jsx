@@ -31,9 +31,12 @@ const userGreeting = (currentUser, logout) => {
       </div>
 
       <div className="header-group-2">
-        <span className="header-username header-group-2-a">
+        <Link
+          to={`/users/${currentUser.id}`}
+          className="header-username header-group-2-a"
+        >
           {currentUser.username}
-        </span>
+        </Link>
         <Link to={`/users/${currentUser.id}`}>
           <i
             className="header-group-2-b fa fa-user-circle-o fa-3x"

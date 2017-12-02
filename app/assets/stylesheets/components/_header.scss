@@ -109,7 +109,8 @@
   display: flex;
 }
 
-.header-group-2-b:hover {
+.header-group-2-b:hover,
+.header-username:hover {
   color: $dark-green;
   cursor: pointer;
 }
