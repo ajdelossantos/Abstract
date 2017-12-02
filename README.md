@@ -1,6 +1,6 @@
 # Abstract
 
-## [Tell your story today.](http://abstract-io.herokuapp.com/#/)
+### [Tell your story today.](http://abstract-io.herokuapp.com/#/)
 
 <br><br>
 
@@ -21,10 +21,10 @@ frontend.
 
 # Features
 
-* Secure sign in and sign up provided by BCrypt password encryption. Session
+* Secure sign in and sign up provided by BCrypt password encryption, and session
   tokens persist to keep users signed in at will
-* A clean, simple interface emphasizes the author/reader relationship and offer
-  a focused and clear writing/reading experience
+* A clean, simple interface emphasizes the author/reader relationship and offers
+  a focused writing/reading experience
 * _Stories come first_
   * Users may view (index/feed and show), create, edit, and delete stories
   * Stories may be linked to images
@@ -37,8 +37,8 @@ frontend.
 
 * _Future Release Pending_
 * _Want to curate what you're reading?_
-  * Users may follow a fellow author to see their stories on their private feed.
-    Users can also track how many readers are following them.
+  * Users may follow an author to see their stories on their private feed. Users
+    can also track how many readers are following them.
 
 ## Feed
 
@@ -56,8 +56,8 @@ the database, stories are stored with the following attributes: `title`, `body`,
 
 The 'index card' above succinctly packages all of this information in a
 conscise, minimal format and encapsulates all the features of the website. Rails
-offers very useful utility methods to transform the data before it arrives on
-the frontend:
+offers useful utility methods to transform the data before it arrives on the
+frontend:
 
 <br>
 
@@ -130,20 +130,19 @@ export const UserDetailsGroup = ({ id, username, imgUrl, date }) => (
 A minimalistic approach to forms keeps the user focus on writing and reading
 content. By design, spare formatting options in the story create/edit forms
 render a typewriter-inspired writing experience in both display and typography.
-
-![StoryForm](https://raw.githubusercontent.com/ajdelossantos/Abstract/master/docs/documentation/story-form.png)
-
 React allows access to a large library of components; an automatically-expanding
 textarea component is integrated into both the comment and story forms.
+
+![StoryForm](https://raw.githubusercontent.com/ajdelossantos/Abstract/master/docs/documentation/story-form.png)
 
 <br><br>
 
 ## Authentication
 
 BCrypt and a persistent `session_token` allow secure user authentication.
-Implemented "Auth" and "Protected" routes in addition to conditional rendering
-logic in React restrict visitors interaction without sacrificing the user
-reading experience.
+Implemented "Auth" and "Protected" routes in combination with conditional
+rendering logic in React restrict a visitor's interaction without sacrificing
+the user reading experience.
 
 <br><br>
 
