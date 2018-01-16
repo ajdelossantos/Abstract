@@ -28,12 +28,15 @@ class StoryShow extends React.Component {
       return Boolean(currentUser.id === authorId);
     }
   }
-
+  
   // currentUserLikes() {
-  //   return this.props.currentUser.likedStories.includes(
-  //     parseInt(this.props.match.params.storyId)
-  //   );
-  // }
+    //   return this.props.currentUser.likedStories.includes(
+      //     parseInt(this.props.match.params.storyId)
+      //   );
+      // }
+
+  // footer LikesForm if needed
+  // <LikesFormContainer display={"end"} />
 
   render() {
     if (!this.props.story || !this.props.users) {
@@ -85,7 +88,6 @@ class StoryShow extends React.Component {
             <div className="article-text-container article-flex-child">
               <pre className="article-text">{body}</pre>
             </div>
-            <LikesFormContainer display={"end"} />
           </div>
           <div className="off-white comments-container">
             <CommentsFormContainer />

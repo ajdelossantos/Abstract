@@ -2,6 +2,14 @@ import React from "react";
 import { Link, withRouter } from "react-router-dom";
 
 class Follows extends React.Component {
+
+  // Reimplement when follows functional
+  // <div className="toggle-btn-container">
+  //   <span href="" className="toggle-btn">
+  //     Follow
+  //   </span>
+  // </div>
+
   render() {
     if (!this.props.user) {
       return null;
@@ -24,11 +32,6 @@ class Follows extends React.Component {
               <Link to={`/users/${id}`} className="user-link">
                 {username}
               </Link>
-              <div className="toggle-btn-container">
-                <span href="" className="toggle-btn">
-                  Follow
-                </span>
-              </div>
             </div>
             <div className="story-index-item-user-date">
               <span>{this.props.updated_at}</span>
