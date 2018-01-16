@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 
-class Follows extends React.Component {
+class FollowsForm extends React.Component {
   render() {
     if (!this.props.user) {
       return null;
@@ -40,4 +40,4 @@ class Follows extends React.Component {
   }
 }
 
-export default Follows;
+export default FollowsForm;

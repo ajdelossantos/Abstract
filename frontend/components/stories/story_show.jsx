@@ -35,6 +35,8 @@ class StoryShow extends React.Component {
   //   );
   // }
 
+  // <LikesFormContainer display={"end"} />
+
   render() {
     if (!this.props.story || !this.props.users) {
       return <Loading />;
@@ -85,7 +87,6 @@ class StoryShow extends React.Component {
             <div className="article-text-container article-flex-child">
               <pre className="article-text">{body}</pre>
             </div>
-            <LikesFormContainer display={"end"} />
           </div>
           <div className="off-white comments-container">
             <CommentsFormContainer />

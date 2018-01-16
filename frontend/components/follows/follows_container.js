@@ -1,8 +1,9 @@
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
-import Follows from "./follows";
+import FollowsForm from "./follows_form";
 import { fetchUser } from "../../actions/users_actions";
 import { createFollow, deleteFollow } from "../../actions/follows_actions";
+import { clearErrors } from "../../actions/errors_actions";
 
 const mapStateToProps = (state, ownProps) => {
   return {
@@ -15,10 +16,11 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     fetchUser: userId => dispatch(fetchUser(userId)),
     createFollow: followeeId => dispatch(createFollow(followeeId)),
-    deleteFollow: followeeId => dispatch(deleteFollow(followeeId))
+    deleteFollow: followeeId => dispatch(deleteFollow(followeeId)),
+    clearErrors: errors => dispatch(clearErrors(errors))
   };
 };
 
 export default withRouter(
-  connect(mapDispatchToProps, mapDispatchToProps)(Follows)
+  connect(mapStateToProps, mapDispatchToProps)(FollowsForm)
 );

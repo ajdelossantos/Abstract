@@ -17,11 +17,7 @@
     "redux-thunk": "^2.2.0",
     "webpack": "^3.8.1"
   },
-  "devDependencies": {
-    "redux-logger": "^3.0.6"
-  },
-  "description":
-    "This README would normally document whatever steps are necessary to get the application up and running.",
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
   "version": "1.0.0",
   "main": "index.js",
   "directories": {
@@ -38,7 +34,8 @@
     "flow stop": "flow stop",
     "flow status": "flow status",
     "flow coverage": "flow coverage",
-    "postinstall": "webpack"
+    "postinstall": "webpack",
+    "webpack": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -60,10 +57,14 @@
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.5.1",
     "flow-bin": "^0.59.0",
-    "prettier-eslint": "^8.2.2"
+    "prettier-eslint": "^8.2.2",
+    "redux-logger": "^3.0.6"
   },
   "babel": {
-    "presets": ["react", "flow"],
+    "presets": [
+      "react",
+      "flow"
+    ],
     "retainLines": true
   }
 }
