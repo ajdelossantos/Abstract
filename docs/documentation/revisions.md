@@ -1,0 +1,12 @@
+### Checkout new dev branches
+- [] implement Follows
+    - [] create follow button form
+    - [] test follows
+    - [] revise user feed to include followed authors stories
+- [] reorganize Story Index
+    - [] add new index card designs
+    - [] write grouping function for index cards
+    - [] limit story results to first 25
+- [] implement cloudinary image storage
+    - [] refactor user_img to take avatar img
+    - [] refactor story_img to for cloudinary
