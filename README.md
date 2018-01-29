@@ -219,6 +219,7 @@ these features:
 
 * Image upload and preview
 * User profile and information customization
+* Sign In/Up modal + loading transitions
 
 This project will serve as inspiration, testbed, and codebase for my future blog
 platform. Stay-tuned!
