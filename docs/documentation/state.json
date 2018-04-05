@@ -1,0 +1,460 @@
+{
+  "entities": {
+    "users": {
+      "172": {
+        "id": 172,
+        "username": "James St. Reade",
+        "img_url": "default.png",
+        "authored_stories": [
+          249
+        ],
+        "authoredComments": [
+          338,
+          339,
+          340,
+          341,
+          342,
+          336,
+          343,
+          301,
+          302,
+          303,
+          304,
+          306
+        ],
+        "likedStories": [
+          249,
+          252,
+          251,
+          250
+        ],
+        "followees": [],
+        "followers": [
+          173,
+          174,
+          175,
+          176,
+          177,
+          178,
+          179,
+          180
+        ]
+      },
+      "174": {
+        "id": 174,
+        "username": "Ben Franklin",
+        "img_url": "default.png",
+        "authored_stories": [
+          251,
+          250
+        ],
+        "authoredComments": [
+          358,
+          297,
+          308
+        ]
+      },
+      "175": {
+        "id": 175,
+        "username": "David Copperfield",
+        "img_url": "default.png",
+        "authored_stories": [
+          253,
+          254,
+          252
+        ],
+        "authoredComments": [
+          346,
+          347,
+          348,
+          345,
+          349,
+          350,
+          298
+        ],
+        "likedStories": [
+          249,
+          262,
+          252,
+          251,
+          250
+        ],
+        "followees": [
+          172
+        ],
+        "followers": []
+      },
+      "176": {
+        "id": 176,
+        "username": "Charles R. Gibson",
+        "img_url": "default.png",
+        "authored_stories": [
+          255
+        ],
+        "authoredComments": [
+          299,
+          310,
+          311
+        ]
+      },
+      "177": {
+        "id": 177,
+        "username": "Miranda Eliot Swan",
+        "img_url": "default.png",
+        "authored_stories": [
+          256
+        ],
+        "authoredComments": [
+          359,
+          300
+        ]
+      },
+      "178": {
+        "id": 178,
+        "username": "Igor Stravinsky",
+        "img_url": "default.png",
+        "authored_stories": [
+          257,
+          258
+        ],
+        "authoredComments": [
+          351,
+          352,
+          355,
+          356,
+          357,
+          312
+        ],
+        "likedStories": [
+          249,
+          264,
+          252,
+          250
+        ],
+        "followees": [
+          172
+        ],
+        "followers": []
+      },
+      "179": {
+        "id": 179,
+        "username": "Mark Twain",
+        "img_url": "default.png",
+        "authored_stories": [
+          262,
+          260,
+          261,
+          259
+        ],
+        "authoredComments": [
+          326,
+          332,
+          334,
+          353,
+          327,
+          328,
+          329,
+          330,
+          331,
+          333,
+          313
+        ],
+        "likedStories": [
+          249,
+          256,
+          264,
+          263,
+          260,
+          259,
+          253,
+          254,
+          252,
+          257,
+          258,
+          250
+        ],
+        "followees": [
+          172
+        ],
+        "followers": []
+      },
+      "180": {
+        "id": 180,
+        "username": "Teddy Roosevelt",
+        "img_url": "default.png",
+        "authored_stories": [
+          264,
+          263
+        ],
+        "authoredComments": [
+          314,
+          315
+        ],
+        "likedStories": [],
+        "followees": [
+          172,
+          174
+        ],
+        "followers": []
+      }
+    },
+    "stories": {
+      "249": {
+        "id": 249,
+        "title": "Reflecting On My Favorite Jazz Albums",
+        "body_peek": "Nighthawk, Nighthawk Quartet\n\n    One of the most striking features of this quartet is its instrumentation, going without piano in the...",
+        "img_url": "https: //scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/13876645_10104620653530113_4271781291747984196_n.jpg?oh=760ceaaceb5bad8504921b0ff3349bb2&oe=5ACDBB2F",
+        "author_id": 172,
+        "commentIds": [
+          337,
+          335,
+          336,
+          297,
+          298,
+          299,
+          300
+        ],
+        "updated_at": "Dec 01, 2017",
+        "likesCount": 8
+      },
+      "250": {
+        "id": 250,
+        "title": "How I Wrote Poor Richard's Almanac",
+        "body_peek": "In 1732 I first publish'd my Almanack, under the name of Richard Saunders; it was continu'd by me about twenty-five...",
+        "img_url": "http://www.magiastrology.com/PoorRichardsAlmanack/PoorRichardsAlmanack_1758_p8%20and%209%20February.gif",
+        "author_id": 174,
+        "commentIds": [
+          334,
+          341,
+          357,
+          345,
+          358
+        ],
+        "updated_at": "Dec 01, 2017",
+        "likesCount": 8
+      },
+      "251": {
+        "id": 251,
+        "title": "I Did WAY More Than a Key on A Kite!",
+        "body_peek": "Before I proceed in relating the part I had in public affairs under this new governor's administration, it may not...",
+        "img_url": "http://all-len-all.com/wp-content/uploads/2014/06/Franklins_experiment.jpg",
+        "author_id": 174,
+        "commentIds": [
+          344,
+          301,
+          302,
+          303,
+          304
+        ],
+        "updated_at": "Dec 01, 2017",
+        "likesCount": 6
+      },
+      "252": {
+        "id": 252,
+        "title": "I Begin Life on My Own Account, and Don’t Like It",
+        "body_peek": "I know enough of the world now, to have almost lost the capacity of being much surprised by anything; but...",
+        "img_url": "https://fthmb.tqn.com/BIFFF7BiUj_nrs6sPYXOzRydry4=/960x0/filters:no_upscale()/GettyImages-56852721-56a3e2f05f9b58b7d0d44373.jpg",
+        "author_id": 175,
+        "commentIds": [
+          332,
+          346,
+          333,
+          343
+        ],
+        "updated_at": "Dec 01, 2017",
+        "likesCount": 8
+      },
+      "253": {
+        "id": 253,
+        "title": "Depression",
+        "body_peek": "As soon as I could recover my presence of mind, which quite deserted me in the first overpowering shock of...",
+        "img_url": "https://i.pinimg.com/736x/90/2a/fb/902afba9ef0a24951883bab0c0292360--fighting-depression-quotes-depression-and-anxiety.jpg",
+        "author_id": 175,
+        "commentIds": [
+          342,
+          347
+        ],
+        "updated_at": "Dec 01, 2017",
+        "likesCount": 1
+      },
+      "254": {
+        "id": 254,
+        "title": "Another Retrospect",
+        "body_peek": "Once again, let me pause upon a memorable period of my life. Let me stand aside, to see the phantoms...",
+        "img_url": "http://www.victorianweb.org/art/illustration/phiz/dc/31.jpg",
+        "author_id": 175,
+        "commentIds": [
+          331
+        ],
+        "updated_at": "Dec 01, 2017",
+        "likesCount": 1
+      },
+      "255": {
+        "id": 255,
+        "title": "Where Did Electrons Come From? Ask Me.",
+        "body_peek": "Not only have we [electrons] been on the move ever since the beginning of this world, but some of us...",
+        "img_url": "story_default.png",
+        "author_id": 176,
+        "commentIds": [],
+        "updated_at": "Dec 01, 2017",
+        "likesCount": 0
+      },
+      "256": {
+        "id": 256,
+        "title": "Daisy, the Autobiography of a Cat: Early Days",
+        "body_peek": "I have no doubt people will wonder that a Cat should write a story. Of course, fighting is more in...",
+        "img_url": "data:image/jpeg;base64...",
+        "author_id": 177,
+        "commentIds": [
+          359,
+          350,
+          305,
+          306,
+          307,
+          308,
+          310,
+          311,
+          312,
+          313,
+          314,
+          315
+        ],
+        "updated_at": "Dec 01, 2017",
+        "likesCount": 1
+      },
+      "257": {
+        "id": 257,
+        "title": "How I Became a Music Composer",
+        "body_peek": "As memory reaches back along the vista of the years, the increasing distance adds to the difficulty of seeing clearly...",
+        "img_url": "https://www.musical-u.com/wp-content/uploads/2016/05/Writing-Music.jpg",
+        "author_id": 178,
+        "commentIds": [
+          329
+        ],
+        "updated_at": "Dec 01, 2017",
+        "likesCount": 1
+      },
+      "258": {
+        "id": 258,
+        "title": "Writing L'Histoire d'un Soldat Was Pretty Hard",
+        "body_peek": "This period, the end of 1917, was one of the hardest I have ever experienced. Overwhelmed by the successive bereavements...",
+        "img_url": "https://ec-assets.sheetmusicplus.com/items/3366865/cover_images/cover-large_file.png",
+        "author_id": 178,
+        "commentIds": [
+          351,
+          353,
+          355,
+          330
+        ],
+        "updated_at": "Dec 01, 2017",
+        "likesCount": 2
+      },
+      "259": {
+        "id": 259,
+        "title": "My Humble Beginnings as a Writer",
+        "body_peek": "My experiences as an author began early in 1867. I came to New York from San Francisco in the first...",
+        "img_url": "https://brilliantinfo.net/wp-content/uploads/2016/10/Author-680-x-300.jpg",
+        "author_id": 179,
+        "commentIds": [],
+        "updated_at": "Dec 01, 2017",
+        "likesCount": 1
+      },
+      "260": {
+        "id": 260,
+        "title": "You Know, Maybe Duelling Is a Bad Idea...",
+        "body_peek": "As concerns duelling. This pastime is as common in Austria to-day as it is in France. But with this difference,...",
+        "img_url": "https://cdni.rt.com/files/2017.06/article/593af88cc36188fd7d8b45e0.jpg",
+        "author_id": 179,
+        "commentIds": [
+          328
+        ],
+        "updated_at": "Dec 01, 2017",
+        "likesCount": 2
+      },
+      "261": {
+        "id": 261,
+        "title": "Going Fishing for Teenage Memories",
+        "body_peek": "This was in 1849. I was fourteen years old, then. We were still living in Hannibal, Missouri, on the banks...",
+        "img_url": "https://www.fs.usda.gov/Internet/FSE_MEDIA/stelprd3805916.jpg",
+        "author_id": 179,
+        "commentIds": [
+          339,
+          340
+        ],
+        "updated_at": "Dec 01, 2017",
+        "likesCount": 0
+      },
+      // Active Story, body omitted for length...
+      "262": {
+        "id": 262,
+        "title": "Making Charicatures with Tom and Huckleberry is Fun",
+        "body": "For thirty years, I have received an average of a dozen letters a year from strangers who remember me, or whose fathers remember me as boy and young man. But these letters are almost always disappointing. I have not known these strangers nor their fathers. I have not heard of the names they mention; the reminiscences to which they call attention have had no part in my experience; all of which means that these strangers have been mistaking me for somebody else. But at last I have the refreshment, this morning, of a letter from a man who deals in names that were familiar to me in my boyhood... I am not done with Dawson's school; I will return to it in a later chapter.",
+        "img_url": "http://moma.org/d/assets/W1siZiIsIjIwMTUvMTAvMjEvNXoyZjBpOW1xZ18xMjMwNTYuanBnIl0sWyJwIiwiY29udmVydCIsIi1yZXNpemUgMjAwMHgyMDAwXHUwMDNlIl1d/123056.jpg?sha=72e2da35ca2ff64e",
+        "author_id": 179,
+        "commentIds": [
+          348
+        ],
+        "updated_at": "Dec 01, 2017",
+        "likesCount": 1
+      },
+      "263": {
+        "id": 263,
+        "title": "How To Make An Old Political Party Progressive",
+        "body_peek": "On September 6, 1901, President McKinley was shot by an Anarchist in the city of Buffalo. I went to Buffalo...",
+        "img_url": "https://ih0.redbubble.net/image.250202866.3300/flat,800x800,075,t.u2.jpg",
+        "author_id": 180,
+        "commentIds": [
+          326,
+          352,
+          327,
+          349
+        ],
+        "updated_at": "Dec 01, 2017",
+        "likesCount": 1
+      },
+      "264": {
+        "id": 264,
+        "title": "A Man, A Plan, A Canal: That's ME!",
+        "img_url": "https://i.pinimg.com/originals/d0/91/82/d0918288e696fd2c3177abfe63121bd3.jpg",
+        "author_id": 180,
+        "commentIds": [
+          338,
+          356
+        ],
+        "updated_at": "Dec 01, 2017",
+        "likesCount": 4,
+        "body_peek": "By far the most important action I took in foreign affairs during the time I was President related to the..."
+      }
+    },
+    "comments": {
+      "348": {
+        "id": 348,
+        "body": "Just why do you have to deal with these poor letter senders...?",
+        "storyId": 262,
+        "authorId": 175,
+        "createdAt": "Dec 01, 2017"
+      }
+    }
+  },
+  "session": {
+    "currentUser": {
+      "id": 171,
+      "username": "Demo User",
+      "img_url": "default.png",
+      "authored_stories": [],
+      "authoredComments": [
+        305
+      ],
+      "likedStories": [
+        249,
+        252,
+        258,
+        251,
+        250
+      ],
+      "followees": [],
+      "followers": []
+    }
+  },
+  "errors": []
+}
