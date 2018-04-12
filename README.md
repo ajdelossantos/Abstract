@@ -1,6 +1,6 @@
 # Abstract
 
-### [Tell your story today.](http://abstract-io.herokuapp.com/#/)
+### [Tell your story today.](http://www.abstractblog.net/)
 
 <br><br>
 
