@@ -35,17 +35,20 @@ gem 'font-awesome-sass', '~> 4.7.0'
 gem 'seed_dump'
 
 group :development, :test do
+  gem 'annotate'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
-  gem 'selenium-webdriver'
   gem 'better_errors'
-  gem 'binding_of_caller'
+  gem 'binding_of_caller', '>= 0.8.0'
   gem 'pry-rails'
-  gem 'annotate'
+  gem 'rails-controller-testing'
   gem 'rspec'
+  gem 'rspec-rails'
   gem 'rspec_junit_formatter'
+  gem 'selenium-webdriver'
+  gem 'shoulda-matchers'
 end
 
 group :development do
@@ -54,6 +57,7 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem 'spring-commands-rspec'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
