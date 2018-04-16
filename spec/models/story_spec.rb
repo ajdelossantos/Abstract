@@ -23,7 +23,7 @@ RSpec.describe Story, type: :model do
 
   it { should belong_to(:author) }
 
-  context "Story#body_peek" do
+  context "#body_peek" do
     it 'should limit the number of words in a :body preview to <= 20' do
       test_story = Story.create({
         :title => "RSpec",
