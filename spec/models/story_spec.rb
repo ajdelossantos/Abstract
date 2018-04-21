@@ -22,6 +22,8 @@ RSpec.describe Story, type: :model do
   end
 
   it { should belong_to(:author) }
+  it { should have_many(:comments) }
+  it { should have_many(:likers) }
 
   context "#body_peek" do
     it 'should limit the number of words in a :body preview to <= 20' do
