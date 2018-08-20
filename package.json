@@ -37,8 +37,8 @@
     "test": "test"
   },
   "engines": {
-    "node": "6.10.1",
-    "npm": "3.10.10"
+    "node": "9.3.0",
+    "npm": "6.1.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -46,7 +46,8 @@
     "flow stop": "flow stop",
     "flow status": "flow status",
     "flow coverage": "flow coverage",
-    "postinstall": "webpack"
+    "postinstall": "webpack",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",

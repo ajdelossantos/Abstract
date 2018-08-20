@@ -4,12 +4,6 @@ import configureStore from "./store/store";
 import Root from "./components/root";
 
 document.addEventListener("DOMContentLoaded", () => {
-
-  var http = require("http");
-    setInterval(function() {
-    http.get("http://abstract-io.herokuapp.com/");
-  }, 300000); // every 5 minutes (300000)
-
   let store;
   if (window.currentUser) {
     const preloadedState = { session: { currentUser: window.currentUser } };
